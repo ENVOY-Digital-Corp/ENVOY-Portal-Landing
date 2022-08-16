@@ -1,2 +1,2 @@
 # Redirect default Netlify subdomain to primary domain
-https://envoyportaldotcom.netlify.app/* https://envoyportal.com/ 301!
+# https://envoyportaldotcom.netlify.app/* https://envoyportal.com/ 301!
