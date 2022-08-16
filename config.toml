@@ -1,0 +1,26 @@
+# SETUP
+baseurl = "/"
+DefaultContentLanguage = "en"
+publishdir = "public"
+canonifyUrls = "true"
+disableKinds = ["RSS","taxonomy","taxonomyTerm"] # disable hugo's content that we don't need...
+
+title = "ENVOY Portal"
+
+googleAnalytics = "" # if needed...
+
+[author]
+    name = "Evan Stinger"
+    email = "evanstinger@icloud.com"
+
+[params]
+    description = "ENVOY Portal is a digital Gaming payment solution, providing easy digital transaction using local currency." # page description -> see ./layouts/partials/head.html
+    images = ["img/hero_bg.png"] #add images here as "img/name.ext" (points to s./static/img/) to populate the default og and twitter <meta> attributes -> see ./layouts/partials/head.html
+
+# these items will be rendered 1. into a tooltip in the navbar and 2. into the footer 
+[[params.social]]
+    title = "Twitter"
+    url = "https://twitter.com/ENVOYcorp" # add your twitter handle
+[[params.social]]
+    title = "LinkedIn"
+    url = "https://linkedin.com/company/envoy-digital-corp-pte-ltd" # add your linkedin profile URL

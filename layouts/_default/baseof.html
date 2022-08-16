@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    {{ block "head" . }}
+        {{ partial "head.html" . }}
+    {{ end }}
+</head>
+<body id="top" class="font-sans text-gray-200 bg-gray-800">
+    <div id="site"> <!-- body wrapper start -->
+        <main>
+            {{ block "main" . }}
+                <!-- index.html content -->
+            {{ end }}
+        </main>
+        <!-- footer -->
+        {{ block "footer" . }}
+            {{ partial "footer.html" . }}
+        {{ end }}
+    </div> <!-- body wrapper end -->
+    {{ partial "js.html" . }}
+</body>
+</html>

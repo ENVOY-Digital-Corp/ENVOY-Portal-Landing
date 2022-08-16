@@ -1,0 +1,25 @@
+{
+  "name": "envoyportal_landing_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp css && hugo server -w --noHTTPCache --disableFastRender -v",
+    "deploy": "gulp css && hugo --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanstinger/#"
+  },
+  "author": "Evan Stinger",
+  "license": "MIT",
+  "homepage": "https://evanstinger.com",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^1.4.6"
+  }
+}

@@ -1,0 +1,60 @@
+<style>
+    .header {
+        background: url("/img/hero_bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .sword {
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+    .shield {
+        position: absolute;
+        bottom: 30%;
+        right: 25%;
+        animation-delay: 1s;
+    }
+    .coins {
+        position: absolute;
+        top: 30%;
+        right: 25%;
+        animation-delay: 1s;
+    }
+    @media(min-width: 968px) {
+        .sword {
+            left: 35%;
+        }
+        .shield {
+            right: 35%;
+        }
+        .coins {
+            right: 40%;
+        }
+    }
+</style>
+
+<div class="header w-full min-h-screen flex flex-col">
+    {{ partial "navbar.html" . }}
+    <img src="/img/sword.png" alt="sword" class="w-32 sword opacity-50 animate-bounce-slow">
+    <img src="/img/shield.png" alt="shield" class="w-16 md:w-24 opacity-50 md:opacity-75 shield animate-bounce-slow">
+    <img src="/img/gold_coins.png" alt="gold_coins" class="w-8 coins animate-pulse">
+    <div class="mt-64 sm:mt-24 bg-blue-400 bg-opacity-50 sm:bg-transparent p-3 w-full flex flex-row-reverse">
+        <div class="flex flex-col pr-2 text-right">
+            <h1 class="text-xl tracking-tighter sm:text-2xl xl:text-4xl text-white delay-300 transform duration-700 ease-in-out">Own your games,</h1>
+            <h1 class="text-xl tracking-tighter sm:text-2xl xl:text-4xl text-white delay-500 transform duration-700 ease-in-out">Build your stash,</h1>
+            <h1 class="text-xl tracking-tighter sm:text-2xl xl:text-4xl text-white delay-700 transform duration-700 ease-in-out">Earn real rewards!</h1>
+            <div class="flex justify-center">
+                <img src="/img/envoyportal_logo.png" alt="ENVOY Portal Logo" class="mt-10 hidden sm:block w-3/4 animate-pulse">
+            </div>
+        </div>
+        
+    </div>
+    <div class="sm:hidden mt-8 flex flex-row justify-center">
+        <a href="#register" class="bg-green-400 py-2 px-4 rounded-full shadow-lg hover:bg-green-200 hover:text-indigo-600 focus:outline-none text-md">
+            <h1>Launch App</h1>
+        </a>
+    </div>
+
+</div>
