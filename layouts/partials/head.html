@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="{{ .Site.BaseURL }}">
 <link rel="preload" href="/css/page.css" as="style">
 <!-- PRELOAD CDN SCRIPTS -->
 <link rel="preconnect" href="https://unpkg.com/popper.js@1" as="script">
@@ -8,24 +9,22 @@
 <!-- SEO -->
 <meta name="referrer" content="always" />
 <meta name="description" content="{{ with .Description }}{{.}}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
-<meta name="author" content="{{ .Site.Params.author.name }}">
+<meta name="author" content="EvanStinger">
 <meta name="robots" content="index,follow">
 
 <!-- Social & Open Graph -->
 <meta property="og:title" content="ENVOY Portal" />
 <meta property="og:description" content="ENVOY Portal is a digital Gaming payment solution, providing easy digital transaction using local currency." />
-<meta property="og:image" content="{{ .Site.Params.images }}">
-
+<meta property="og:image" content="https://envoyportal.com/img/social.png">
 <meta property="og:url" content="https://envoyportal.com" />
-<meta name="twitter:title" content="ENVOY Portal">
-<meta name="twitter:description" content="NVOY Portal is a digital Gaming payment solution, providing easy digital transaction using local currency." />
-<meta name="twitter:image" content="{{ .Site.Params.images }}" />
 
+<meta name="twitter:title" content="ENVOY Portal">
+<meta name="twitter:description" content="ENVOY Portal is a digital Gaming payment solution, providing easy digital transaction using local currency." />
+<meta name="twitter:image" content="https://envoyportal.com/img/social.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@ENVOYcorp" />
 <meta name="twitter:creator" content="@ENVOYcorp" />
 
-<base href="{{ .Site.BaseURL }}">
 <meta name="theme-color" content="#ffffff">
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 

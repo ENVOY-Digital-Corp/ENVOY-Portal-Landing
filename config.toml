@@ -15,7 +15,7 @@ googleAnalytics = "" # if needed...
 
 [params]
     description = "ENVOY Portal is a digital Gaming payment solution, providing easy digital transaction using local currency." # page description -> see ./layouts/partials/head.html
-    images = ["img/hero_bg.png"] #add images here as "img/name.ext" (points to s./static/img/) to populate the default og and twitter <meta> attributes -> see ./layouts/partials/head.html
+    images = ["img/social.png"] #add images here as "img/name.ext" (points to s./static/img/) to populate the default og and twitter <meta> attributes -> see ./layouts/partials/head.html
 
 # these items will be rendered 1. into a tooltip in the navbar and 2. into the footer 
 [[params.social]]
