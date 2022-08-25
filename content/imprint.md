@@ -8,9 +8,10 @@ ENVOY Portal name and log is a registered trademark, also owned by PT. IDA.
 
 Every Games shown within this website and the web app are belong to their respective companies/owners, ENVOY Portal only providing 3rd Party Service for their users. Images are taken from public domains to illustrate the games and possible activities.
 
-PT. Indo Digital Aset is a registered company in Republic of Indonesia.
-HO Address: APL Tower - Central Park, Lantai 19 Unit T7, J
-Tanjung Duren Selatan, Grogol Petamburan Kota ADM, Jakarta Barat DKI Jakarta
+PT. Indo Digital Aset is a registered company in Republic of Indonesia.  
+HO Address: APL Tower - Central Park, Lantai 19 Unit T7, J  
+Tanjung Duren Selatan, Grogol Petamburan Kota ADM, Jakarta Barat DKI Jakarta   
+Phone: (021) - 31997322 ext 147  
 
 Images: Vectors via <a href="https://www.freepik.com" rel="noopener" target="_blank">Freepik</a>
 
