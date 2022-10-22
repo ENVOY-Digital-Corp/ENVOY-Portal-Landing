@@ -2,4 +2,4 @@
 title: Join Waiting List
 ---
 
-ENVOY Portal is still ***in development***, but will launch **soon** in Q4 - 2022. If you really interested on ENVOY Portal, you may **join the Waiting List**. Everyone in the waiting list will be notified when ENVOY Portal app is ready to launch, so you will get the privilege to test the App **before** it's officially launched in public.
+ENVOY Portal just launched the public beta release with limited features for collaborating Guilds and Partners, development still on progress, more features will be released soon. Join our newsletter to get informations about future releases.
