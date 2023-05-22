@@ -30,7 +30,6 @@ import SectionSlider from "@/components/Landing/Section/SectionSlider"
 const Landing = () => {
   return (
     <div>
-      <Navigation />
       <section>
         <div className="container">
           <div className="flex items-center">

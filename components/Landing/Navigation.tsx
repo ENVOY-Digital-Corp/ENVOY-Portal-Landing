@@ -4,6 +4,7 @@ import DehazeIcon from "@mui/icons-material/Dehaze"
 import { Box, Button, IconButton } from "@mui/material"
 
 import logo from "@/assets/images/envoy-white.png"
+import Link from "next/link"
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false)
@@ -17,9 +18,9 @@ const Navigation = () => {
       <div className="container">
         <div className="flex justify-between h-[70px] items-center">
           <div>
-            <a href="#">
+            <Link href="/">
               <img src={logo.src} alt="envoy portal logo" className="w-24" />
-            </a>
+            </Link>
           </div>
           <Box
             sx={{
