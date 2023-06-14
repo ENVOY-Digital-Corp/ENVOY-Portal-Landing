@@ -46,7 +46,7 @@ const Navigation = () => {
               sm:p-0
             "
           >
-            <ul className="sm:flex sm:space-x-10 space-y-4 sm:space-y-0 items-center">
+            <ul className="sm:flex sm:space-x-10 space-y-4 sm:space-y-0 uppercase font-medium items-center">
               <li>
                 <div>
                   <a href="#">About</a>
@@ -64,13 +64,15 @@ const Navigation = () => {
               </li>
               <li>
                 <div>
-                  <Button
-                    variant="contained"
-                    sx={{ color: "white" }}
-                    color="warning"
-                  >
-                    Launch App
-                  </Button>
+                  <Link href="https://app.envoyportal.com">
+                    <Button
+                      variant="contained"
+                      sx={{ color: "white" }}
+                      color="warning"
+                    >
+                      Launch App
+                    </Button>
+                  </Link>
                 </div>
               </li>
             </ul>

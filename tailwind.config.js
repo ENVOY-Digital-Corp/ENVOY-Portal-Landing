@@ -13,7 +13,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "border-primary": "#0f0f0f"
+        "border-primary": "#0f0f0f",
+        "secondary": "#ffa726",
+        "ep-yellow": "#ffa726"
       },
       container: {
         center: true,

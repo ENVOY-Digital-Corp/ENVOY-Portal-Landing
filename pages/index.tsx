@@ -26,6 +26,7 @@ import sprinterland from "@/assets/images/sprinterland.png"
 import FeatureCard from "@/components/Cards/FeaturesCard"
 import Navigation from "@/components/Landing/Navigation"
 import SectionSlider from "@/components/Landing/Section/SectionSlider"
+import Link from "next/link"
 
 const Landing = () => {
   return (
@@ -57,23 +58,26 @@ const Landing = () => {
               }}
             >
               <div className="relative z-10">
-                <p className="text-4xl uppercase font-bold leading-normal">
-                  own your <span className="text-ep-yellow">games</span>,
+                <p className="text-5xl uppercase font-extrabold leading-normal">
+                  own your <span className="text-secondary">games</span>,
                 </p>
-                <p className="text-4xl uppercase font-bold leading-normal">
-                  build your <span className="text-ep-yellow">stash</span>,
+                <p className="text-5xl uppercase font-bold leading-normal">
+                  build your <span className="text-secondary">stash</span>,
                 </p>
-                <p className="text-4xl uppercase font-bold leading-normal">
-                  earn real <span className="text-ep-yellow">rewards!</span>
+                <p className="text-5xl uppercase font-bold leading-normal">
+                  earn real <span className="text-secondary">rewards!</span>
                 </p>
                 <div className="mt-8">
-                  <Button
-                    variant="contained"
-                    sx={{ color: "white" }}
-                    color="warning"
-                  >
-                    Launch App
-                  </Button>
+                  <Link href="https://app.envoyportal.com">
+                    <Button
+                      variant="contained"
+                      sx={{ color: "white" }}
+                      size="large"
+                      color="warning"
+                    >
+                      Launch App
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Box>
@@ -83,7 +87,7 @@ const Landing = () => {
                 "&:after": {
                   background: `url(${headerIllus.src}) right`,
                   position: "absolute",
-                  right: 0,
+                  right: "10%",
                   top: 70,
                   display: {
                     xs: "none",
@@ -105,7 +109,7 @@ const Landing = () => {
         <div className="container">
           <div className="max-w-lg mx-auto text-center">
             <h3 className="text-4xl font-bold uppercase">
-              portal to <span className="text-ep-yellow">unlimited</span>{" "}
+              portal to <span className="text-secondary">unlimited</span>{" "}
               possibility
             </h3>
             <p className="mt-6">
@@ -125,13 +129,15 @@ const Landing = () => {
                     <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
                       <p>Buy and build your ultimate deck</p>
                       <div className="flex-none">
-                        <Button
-                          variant="contained"
-                          sx={{ color: "white" }}
-                          color="warning"
-                        >
-                          Launch App
-                        </Button>
+                        <Link href="https://app.envoyportal.com">
+                          <Button
+                            variant="contained"
+                            sx={{ color: "white" }}
+                            color="warning"
+                          >
+                            Launch App
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -144,13 +150,15 @@ const Landing = () => {
                     <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
                       <p>Buy packs from marketplace</p>
                       <div className="flex-none">
-                        <Button
-                          variant="contained"
-                          sx={{ color: "white" }}
-                          color="warning"
-                        >
-                          Launch App
-                        </Button>
+                        <Link href="https://app.envoyportal.com">
+                          <Button
+                            variant="contained"
+                            sx={{ color: "white" }}
+                            color="warning"
+                          >
+                            Launch App
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -163,13 +171,15 @@ const Landing = () => {
                     <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
                       <p>Buy your dream players</p>
                       <div className="flex-none">
-                        <Button
-                          variant="contained"
-                          sx={{ color: "white" }}
-                          color="warning"
-                        >
-                          Launch App
-                        </Button>
+                        <Link href="https://app.envoyportal.com">
+                          <Button
+                            variant="contained"
+                            sx={{ color: "white" }}
+                            color="warning"
+                          >
+                            Launch App
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -182,13 +192,15 @@ const Landing = () => {
                     <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
                       <p>Buy rare CS:GO skins</p>
                       <div className="flex-none">
-                        <Button
-                          variant="contained"
-                          sx={{ color: "white" }}
-                          color="warning"
-                        >
-                          Launch App
-                        </Button>
+                        <Link href="https://app.envoyportal.com">
+                          <Button
+                            variant="contained"
+                            sx={{ color: "white" }}
+                            color="warning"
+                          >
+                            Launch App
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -201,13 +213,15 @@ const Landing = () => {
                     <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
                       <p>Customize your avatar</p>
                       <div className="flex-none">
-                        <Button
-                          variant="contained"
-                          sx={{ color: "white" }}
-                          color="warning"
-                        >
-                          Launch App
-                        </Button>
+                        <Link href="https://app.envoyportal.com">
+                          <Button
+                            variant="contained"
+                            sx={{ color: "white" }}
+                            color="warning"
+                          >
+                            Launch App
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -382,18 +396,20 @@ const Landing = () => {
       </Box>
       <section className="py-12 relative">
         <div className="container">
-          <div className="max-w-lg mx-auto text-center">
+          <div className="max-w-lg mx-auto text-center relative z-40">
             <h3 className="text-4xl font-bold uppercase mt-6">
               .. and so much more!
             </h3>
             <div className="mt-8">
-              <Button
-                variant="contained"
-                sx={{ color: "white" }}
-                color="warning"
-              >
-                Launch App
-              </Button>
+              <Link href="https://app.envoyportal.com">
+                <Button
+                  variant="contained"
+                  sx={{ color: "white" }}
+                  color="warning"
+                >
+                  Launch App
+                </Button>
+              </Link>
             </div>
           </div>
           <Box
