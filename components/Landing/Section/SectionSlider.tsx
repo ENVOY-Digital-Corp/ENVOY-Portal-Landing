@@ -1,32 +1,32 @@
 /* eslint-disable import/no-unresolved */
-import { Box } from '@mui/material';
+import { Box } from "@mui/material"
 
-import { Autoplay, Navigation, Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Swiper } from 'swiper/react';
+import { Autoplay, Navigation, Pagination } from "swiper"
+import "swiper/css"
+import "swiper/css/autoplay"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import { Swiper } from "swiper/react"
 
 type Props = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 const SectionSlider: React.FC<Props> = ({ children }) => {
   return (
     <Box
       sx={{
-        '.swiper-button-prev': {
-          color: 'white',
+        ".swiper-button-prev": {
+          color: "white",
           left: 0,
         },
-        '.swiper-button-next': {
-          color: 'white',
+        ".swiper-button-next": {
+          color: "white",
           right: 0,
         },
-        '.swiper-pagination': {
-          '.swiper-pagination-bullet-active': {
-            backgroundColor: 'white',
+        ".swiper-pagination": {
+          ".swiper-pagination-bullet-active": {
+            backgroundColor: "white",
           },
         },
       }}
@@ -44,7 +44,7 @@ const SectionSlider: React.FC<Props> = ({ children }) => {
         {children}
       </Swiper>
     </Box>
-  );
-};
+  )
+}
 
-export default SectionSlider;
+export default SectionSlider
