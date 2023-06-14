@@ -19,6 +19,15 @@ module.exports = {
         center: true,
         padding: "1.5rem"
       },
+      typography: ({theme}) => ({
+        DEFAULT: {
+          css: {
+            "--tw-prose-body": theme("colors.gray[400]"),
+            "--tw-prose-headings": theme("colors.white"),
+            "--tw-prose-links": theme("colors.indigo[500]"),
+          }
+        }
+      })
     },
   },
   plugins: [
