@@ -1,16 +1,28 @@
 import { useState } from "react"
 
 import DehazeIcon from "@mui/icons-material/Dehaze"
-import { Box, Button, IconButton } from "@mui/material"
+import { Box, Button, IconButton, Menu, MenuItem } from "@mui/material"
+import { Link as ScrollLink } from "react-scroll"
 
 import logo from "@/assets/images/envoy-white.png"
 import Link from "next/link"
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward"
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false)
+  const [follow, setFollow] = useState<null | HTMLElement>(null)
 
-  const handleToggle = () => {
-    setToggle(!toggle)
+  const handleToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setToggle(true)
+  }
+
+  const handleFollowClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setFollow(e.currentTarget)
+  }
+
+  const handleFollowClose = () => {
+    setFollow(null)
   }
 
   return (
@@ -49,17 +61,73 @@ const Navigation = () => {
             <ul className="sm:flex sm:space-x-10 space-y-4 sm:space-y-0 uppercase font-medium items-center">
               <li>
                 <div>
-                  <a href="#">About</a>
+                  <ScrollLink
+                    to="about"
+                    smooth={true}
+                    className="cursor-pointer"
+                  >
+                    <Button variant="text" className="text-white">
+                      About
+                    </Button>
+                  </ScrollLink>
                 </div>
               </li>
               <li>
                 <div>
-                  <a href="#">Feature</a>
+                  <ScrollLink
+                    to="features"
+                    smooth={true}
+                    className="cursor-pointer"
+                  >
+                    <Button variant="text" className="text-white">
+                      Feature
+                    </Button>
+                  </ScrollLink>
                 </div>
               </li>
               <li>
                 <div>
-                  <a href="#">Follow</a>
+                  <Button
+                    variant="text"
+                    onClick={handleFollowClick}
+                    className="text-white"
+                    endIcon={<ExpandMoreIcon />}
+                  >
+                    Follow
+                  </Button>
+                  <Menu
+                    anchorEl={follow}
+                    open={Boolean(follow)}
+                    onClose={handleFollowClose}
+                    MenuListProps={{
+                      "aria-labelledby": "basic-button",
+                    }}
+                  >
+                    <MenuItem onClick={handleFollowClose}>
+                      <a href="https://twitter.com/envoycorp" target="_blank">
+                        <Button
+                          variant="text"
+                          onClick={handleFollowClick}
+                          className="text-white"
+                          endIcon={<ArrowOutwardIcon />}
+                        >
+                          Twitter
+                        </Button>
+                      </a>
+                    </MenuItem>
+                    <MenuItem onClick={handleFollowClose}>
+                      <a href="https://t.me/envoyportal" target="_blank">
+                        <Button
+                          variant="text"
+                          onClick={handleFollowClick}
+                          className="text-white"
+                          endIcon={<ArrowOutwardIcon />}
+                        >
+                          Telegram
+                        </Button>
+                      </a>
+                    </MenuItem>
+                  </Menu>
                 </div>
               </li>
               <li>

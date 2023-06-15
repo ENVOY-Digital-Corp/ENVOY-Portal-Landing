@@ -24,9 +24,9 @@ import snm3 from "@/assets/images/snm3.png"
 import sorare from "@/assets/images/sorare.png"
 import sprinterland from "@/assets/images/sprinterland.png"
 import FeatureCard from "@/components/Cards/FeaturesCard"
-import Navigation from "@/components/Landing/Navigation"
 import SectionSlider from "@/components/Landing/Section/SectionSlider"
 import Link from "next/link"
+import { Element } from "react-scroll"
 
 const Landing = () => {
   return (
@@ -35,7 +35,7 @@ const Landing = () => {
         <div className="container">
           <div className="flex items-center">
             <Box
-              className="sm:w-1/2"
+              className="sm:w-4/5"
               sx={{
                 "&:after": {
                   background: `url(${bgLeft.src}) left`,
@@ -57,14 +57,14 @@ const Landing = () => {
                 },
               }}
             >
-              <div className="relative z-10">
-                <p className="text-5xl uppercase font-extrabold leading-normal">
+              <div className="text-3xl sm:text-4xl md:text-5xl relative z-10">
+                <p className=" uppercase font-extrabold leading-normal">
                   own your <span className="text-secondary">games</span>,
                 </p>
-                <p className="text-5xl uppercase font-bold leading-normal">
+                <p className="uppercase font-bold leading-normal">
                   build your <span className="text-secondary">stash</span>,
                 </p>
-                <p className="text-5xl uppercase font-bold leading-normal">
+                <p className="uppercase font-bold leading-normal">
                   earn real <span className="text-secondary">rewards!</span>
                 </p>
                 <div className="mt-8">
@@ -105,132 +105,134 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      <section className="py-12">
-        <div className="container">
-          <div className="max-w-lg mx-auto text-center">
-            <h3 className="text-4xl font-bold uppercase">
-              portal to <span className="text-secondary">unlimited</span>{" "}
-              possibility
-            </h3>
-            <p className="mt-6">
-              Buy whatever you want from any game.{" "}
-              <span className="text-ep-yellow">
-                No Credit Card, no PayPal, no USD/EUR needed
-              </span>
-              . Just pay with Local Currency (Bank Transfer or e-Wallets).
-            </p>
+      <Element name="about">
+        <section className="py-12">
+          <div className="container">
+            <div className="max-w-lg mx-auto text-center">
+              <h3 className="text-4xl font-bold uppercase">
+                portal to <span className="text-secondary">unlimited</span>{" "}
+                possibility
+              </h3>
+              <p className="mt-6">
+                Buy whatever you want from any game.{" "}
+                <span className="text-ep-yellow">
+                  No Credit Card, no PayPal, no USD/EUR needed
+                </span>
+                . Just pay with Local Currency (Bank Transfer or e-Wallets).
+              </p>
+            </div>
+            <div className="mt-6">
+              <SectionSlider>
+                <SwiperSlide>
+                  <div className="relative">
+                    <div>
+                      <img src={sprinterland.src} alt="Envoy Portal X GGG" />
+                      <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
+                        <p>Buy and build your ultimate deck</p>
+                        <div className="flex-none">
+                          <Link href="https://app.envoyportal.com">
+                            <Button
+                              variant="contained"
+                              sx={{ color: "white" }}
+                              color="warning"
+                            >
+                              Launch App
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="relative">
+                    <div>
+                      <img src={minecraft.src} alt="Envoy Portal X GGG" />
+                      <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
+                        <p>Buy packs from marketplace</p>
+                        <div className="flex-none">
+                          <Link href="https://app.envoyportal.com">
+                            <Button
+                              variant="contained"
+                              sx={{ color: "white" }}
+                              color="warning"
+                            >
+                              Launch App
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="relative">
+                    <div>
+                      <img src={sorare.src} alt="Envoy Portal X GGG" />
+                      <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
+                        <p>Buy your dream players</p>
+                        <div className="flex-none">
+                          <Link href="https://app.envoyportal.com">
+                            <Button
+                              variant="contained"
+                              sx={{ color: "white" }}
+                              color="warning"
+                            >
+                              Launch App
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="relative">
+                    <div>
+                      <img src={csgo.src} alt="Envoy Portal X GGG" />
+                      <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
+                        <p>Buy rare CS:GO skins</p>
+                        <div className="flex-none">
+                          <Link href="https://app.envoyportal.com">
+                            <Button
+                              variant="contained"
+                              sx={{ color: "white" }}
+                              color="warning"
+                            >
+                              Launch App
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="relative">
+                    <div>
+                      <img src={sandbox.src} alt="Envoy Portal X GGG" />
+                      <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
+                        <p>Customize your avatar</p>
+                        <div className="flex-none">
+                          <Link href="https://app.envoyportal.com">
+                            <Button
+                              variant="contained"
+                              sx={{ color: "white" }}
+                              color="warning"
+                            >
+                              Launch App
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </SectionSlider>
+            </div>
           </div>
-          <div className="mt-6">
-            <SectionSlider>
-              <SwiperSlide>
-                <div className="relative">
-                  <div>
-                    <img src={sprinterland.src} alt="Envoy Portal X GGG" />
-                    <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
-                      <p>Buy and build your ultimate deck</p>
-                      <div className="flex-none">
-                        <Link href="https://app.envoyportal.com">
-                          <Button
-                            variant="contained"
-                            sx={{ color: "white" }}
-                            color="warning"
-                          >
-                            Launch App
-                          </Button>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="relative">
-                  <div>
-                    <img src={minecraft.src} alt="Envoy Portal X GGG" />
-                    <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
-                      <p>Buy packs from marketplace</p>
-                      <div className="flex-none">
-                        <Link href="https://app.envoyportal.com">
-                          <Button
-                            variant="contained"
-                            sx={{ color: "white" }}
-                            color="warning"
-                          >
-                            Launch App
-                          </Button>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="relative">
-                  <div>
-                    <img src={sorare.src} alt="Envoy Portal X GGG" />
-                    <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
-                      <p>Buy your dream players</p>
-                      <div className="flex-none">
-                        <Link href="https://app.envoyportal.com">
-                          <Button
-                            variant="contained"
-                            sx={{ color: "white" }}
-                            color="warning"
-                          >
-                            Launch App
-                          </Button>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="relative">
-                  <div>
-                    <img src={csgo.src} alt="Envoy Portal X GGG" />
-                    <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
-                      <p>Buy rare CS:GO skins</p>
-                      <div className="flex-none">
-                        <Link href="https://app.envoyportal.com">
-                          <Button
-                            variant="contained"
-                            sx={{ color: "white" }}
-                            color="warning"
-                          >
-                            Launch App
-                          </Button>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="relative">
-                  <div>
-                    <img src={sandbox.src} alt="Envoy Portal X GGG" />
-                    <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
-                      <p>Customize your avatar</p>
-                      <div className="flex-none">
-                        <Link href="https://app.envoyportal.com">
-                          <Button
-                            variant="contained"
-                            sx={{ color: "white" }}
-                            color="warning"
-                          >
-                            Launch App
-                          </Button>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            </SectionSlider>
-          </div>
-        </div>
-      </section>
+        </section>
+      </Element>
       <Box
         sx={{
           "&:after": {
@@ -251,7 +253,7 @@ const Landing = () => {
           <div className="block sm:flex items-center space-x-3">
             <div className="sm:w-4/12">
               <div className="max-w-lg text-center sm:text-left">
-                <h3 className="text-5xl font-bold uppercase">
+                <h3 className="text-6xl font-bold uppercase">
                   how it <span className="text-ep-yellow">work</span>
                 </h3>
                 <div className="mt-6 text-lg">
@@ -341,58 +343,60 @@ const Landing = () => {
             </SectionSlider>
           </div>
         </div>
-        <div className="mt-28">
-          <div className="container">
-            <div className="max-w-lg mx-auto text-center">
-              <h3 className="text-4xl font-bold uppercase">
-                designed by <span className="text-ep-yellow">gamers</span> for
-                gamers
-              </h3>
-              <p className="mt-6">
-                Intuitive solutions designed by Gamers to overcome the problems
-                within modern gaming ecosystems.
-              </p>
-            </div>
-            <div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-14">
-                <FeatureCard
-                  title="Global support game"
-                  description="The Portal will keep growing to support every Global Top and
+        <Element name="features">
+          <div className="mt-28">
+            <div className="container">
+              <div className="max-w-lg mx-auto text-center">
+                <h3 className="text-4xl font-bold uppercase">
+                  designed by <span className="text-ep-yellow">gamers</span> for
+                  gamers
+                </h3>
+                <p className="mt-6">
+                  Intuitive solutions designed by Gamers to overcome the
+                  problems within modern gaming ecosystems.
+                </p>
+              </div>
+              <div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-14">
+                  <FeatureCard
+                    title="Global support game"
+                    description="The Portal will keep growing to support every Global Top and
                 Trending Games."
-                />
-                <FeatureCard
-                  title="intuitive mechanism"
-                  description="Designed by Gamers to make every experience to be fun and
+                  />
+                  <FeatureCard
+                    title="intuitive mechanism"
+                    description="Designed by Gamers to make every experience to be fun and
                 familiar. Skip the tutorial and jump right to the action."
-                />
-                <FeatureCard
-                  title="ease of payments"
-                  description="Simply pay with local currency using bank transfer or e-wallet app. No Credit Card, no PayPal or EUR/USD or any foreign payment method needed."
-                />
-                <FeatureCard
-                  title="DARK MODE FTW"
-                  description="Because we know, Dark Mode is mandatory. Portal will pamper gamers with sleek, elegant and modern interfaces. Keep you stay in the zone, Winning!"
-                />
-                <FeatureCard
-                  title="STATE OF ART CODE QUALITY"
-                  description="Built with battle-tested codes, to ensure maximum security and most efficient experience."
-                />
-                <FeatureCard
-                  title="WELL DOCUMENTED"
-                  description="Designed to be modular and developer friendly. Always open to cooperate with any game/project."
-                />
-                <FeatureCard
-                  title="COMPETITIVE PRICING"
-                  description="Provide best service with competitive fees, ensuring our users to get the best bang for their bucks."
-                />
-                <FeatureCard
-                  title="CASH-IN & CASH-OUT"
-                  description="Vice versa. Use the Portal to plant the seed, use it again to reap the rewards."
-                />
+                  />
+                  <FeatureCard
+                    title="ease of payments"
+                    description="Simply pay with local currency using bank transfer or e-wallet app. No Credit Card, no PayPal or EUR/USD or any foreign payment method needed."
+                  />
+                  <FeatureCard
+                    title="DARK MODE FTW"
+                    description="Because we know, Dark Mode is mandatory. Portal will pamper gamers with sleek, elegant and modern interfaces. Keep you stay in the zone, Winning!"
+                  />
+                  <FeatureCard
+                    title="STATE OF ART CODE QUALITY"
+                    description="Built with battle-tested codes, to ensure maximum security and most efficient experience."
+                  />
+                  <FeatureCard
+                    title="WELL DOCUMENTED"
+                    description="Designed to be modular and developer friendly. Always open to cooperate with any game/project."
+                  />
+                  <FeatureCard
+                    title="COMPETITIVE PRICING"
+                    description="Provide best service with competitive fees, ensuring our users to get the best bang for their bucks."
+                  />
+                  <FeatureCard
+                    title="CASH-IN & CASH-OUT"
+                    description="Vice versa. Use the Portal to plant the seed, use it again to reap the rewards."
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Element>
       </Box>
       <section className="py-12 relative">
         <div className="container">
