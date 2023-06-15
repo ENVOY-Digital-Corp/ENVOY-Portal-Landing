@@ -17,7 +17,11 @@ const Footer = () => {
               </a>
             </div>
             <div className="text-center">
-              <ScrollLink to="about" smooth className="block p-2 uppercase">
+              <ScrollLink
+                to="about"
+                smooth
+                className="block p-2 uppercase cursor-pointer"
+              >
                 About
               </ScrollLink>
             </div>
@@ -36,7 +40,11 @@ const Footer = () => {
               </a>
             </div>
             <div className="text-center">
-              <ScrollLink to="features" smooth className="block p-2 uppercase">
+              <ScrollLink
+                to="features"
+                smooth
+                className="block p-2 uppercase  cursor-pointer"
+              >
                 Feature
               </ScrollLink>
             </div>
@@ -49,9 +57,9 @@ const Footer = () => {
           <div className="text-center text-sm mx-auto max-w-3xl mt-24 uppercase">
             <p>
               PT. INDO DIGITAL ASET
-              <br /> Aset APL Tower - Central Park, Lantai 19 Unit T7, J Tanjung
-              Duren Selatan, Grogol Petamburan Kota ADM, Jakarta Barat <br />{" "}
-              DKI Jakarta <br /> (021) - 31997322 ext 147{" "}
+              <br /> APL TOWER – CENTRAL PARK, LANTAI 19 UNIT T7 JALAN LETJEN S
+              PARMAN KAV 28 TANJUNG DUREN SELATAN, GROGOL, PETAMBURAN, JAKARTA
+              BARAT, 11470, INDONESIA <br /> (021) - 31997322 ext 147{" "}
             </p>
             <p className="mt-7">© ENVOY Portal {new Date().getFullYear()}</p>
           </div>
