@@ -36,10 +36,9 @@ const Landing = () => {
         <div className="Bg w-full h-full left-0 top-0 absolute">
           <div className="Ellipse1 w-full h-full left-0 top-0 absolute opacity-20 bg-cyan-900 rounded-full blur-3xl" />
           <div className="MaskGroup w-full h-full left-0 bottom-0 absolute">
-            <img
-              className="Aset22 w-[50rem] h-96 left-0 bottom-0 absolute opacity-60"
-              src="/graphic1.png"
-            />
+            <div className="Aset22 w-[50rem] h-96 left-0 bottom-0 absolute opacity-60">
+              <Image src="/graphic1.png" alt="Aset22" fill={true} />
+            </div>
           </div>
         </div>
 
@@ -177,7 +176,13 @@ const Landing = () => {
                     </div>
                   </div>
                   <div className="Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
-                    <div className="Thumbnail1 w-96 h-64 rounded-lg" />
+                    <div className="Thumbnail1 w-96 h-64 rounded-lg relative">
+                      <Image
+                        alt="Thumbnail"
+                        src="/video-thumbnail.png"
+                        fill={true}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -185,8 +190,14 @@ const Landing = () => {
             <div className="Card self-stretch rounded flex-col justify-start items-start flex">
               <div className="Paper self-stretch rounded flex-col justify-start items-start flex">
                 <div className="CardElements self-stretch rounded justify-start items-center gap-28 inline-flex">
-                  <div className="Cardmedia w-96 p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
-                    <div className="Thumbnail1 w-96 h-64 rounded-lg" />
+                  <div className="Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
+                    <div className="Thumbnail1 w-96 h-64 rounded-lg relative">
+                      <Image
+                        alt="Thumbnail"
+                        src="/video-thumbnail.png"
+                        fill={true}
+                      />
+                    </div>
                   </div>
                   <div className="Cardheader grow shrink basis-0 p-4 justify-start items-center flex">
                     <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
@@ -219,8 +230,14 @@ const Landing = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="Cardmedia w-96 p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
-                    <div className="Thumbnail1 w-96 h-64 rounded-lg" />
+                  <div className="Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
+                    <div className="Thumbnail1 w-96 h-64 rounded-lg relative">
+                      <Image
+                        alt="Thumbnail"
+                        src="/video-thumbnail.png"
+                        fill={true}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -233,23 +250,115 @@ const Landing = () => {
         <div className="container">
           <div className="w-full flex-col justify-start items-center gap-28 inline-flex">
             <div className="Title self-stretch flex-col justify-start items-center gap-7 flex">
-              <div className="SectionTitle self-stretch text-center text-white text-5xl font-bold font-['Euclid Circular B'] tracking-tight">
+              <div className="SectionTitle self-stretch text-center text-white text-4xl font-bold tracking-tight">
                 Simply digital ecosystem for modern
                 <br />
                 Digital trades
               </div>
-              <div className="Description self-stretch text-center text-white text-base font-normal font-['Euclid Circular B']">
+              <div className="Description self-stretch text-center text-white text-base font-normal">
                 A perfect solution for maintenance your digital assets easily
                 <br />
                 and safely with a modern digital ecosystems
               </div>
             </div>
-            <div className="Cardmedia w-96 h-96 flex-col justify-center items-center flex">
-              <div className="LibraryPlaceholderImage w-96 h-96 bg-black bg-opacity-5 flex-col justify-center items-center flex">
-                <img
-                  className="Image40 w-96 h-96"
-                  src="https://via.placeholder.com/812x827"
-                />
+            <div className="Cardmedia flex-col justify-center items-center flex">
+              <div className="LibraryPlaceholderImage bg-black bg-opacity-5 flex-col justify-center items-center flex">
+                <div className="Image40 w-[50rem] h-[50rem] relative">
+                  <Image alt="Image40" src="/circle-graphic.png" fill={true} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="Frame48095566">
+        <div className="container">
+          <div className="flex-col w-full justify-start items-center gap-16 inline-flex">
+            <div className="SectionTitle text-center text-white text-4xl font-bold">
+              Our Partners
+            </div>
+            <div className="Wrapper flex-col justify-center items-center gap-8 flex">
+              <div className="CardGroup justify-center items-center gap-6 inline-flex">
+                <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-52 h-52 p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 backdrop-blur-xl justify-center items-center inline-flex">
+                    <div className="GggGarudaIcon2 w-32 h-32 relative">
+                      <Image alt="Logo" src="/partner-garuda.png" fill={true} />
+                    </div>
+                  </div>
+                </div>
+                <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-52 h-52 p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <img
+                      className="Wtw1 w-32 h-32 rounded-2xl"
+                      src="https://via.placeholder.com/130x130"
+                    />
+                  </div>
+                </div>
+                <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-52 h-52 p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <img
+                      className="1 w-32 h-32"
+                      src="https://via.placeholder.com/130x130"
+                    />
+                  </div>
+                </div>
+                <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-52 h-52 px-16 py-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <img
+                      className="KMSKDeinze1 w-20 h-32"
+                      src="https://via.placeholder.com/76x130"
+                    />
+                  </div>
+                </div>
+                <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage px-8 py-14 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <div className="Frame48095537 flex-col justify-start items-center gap-2 inline-flex">
+                      <img
+                        className="Logo2 w-16 h-16"
+                        src="https://via.placeholder.com/69x69"
+                      />
+                      <img
+                        className="Logo1 w-36 h-6"
+                        src="https://via.placeholder.com/147x23"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="CardGroup justify-center items-center gap-6 inline-flex">
+                <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-52 h-52 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <img
+                      className="EternalCrypt1 w-44 h-11"
+                      src="https://via.placeholder.com/172x44"
+                    />
+                  </div>
+                </div>
+                <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-52 h-52 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <img
+                      className="1 w-44 h-14"
+                      src="https://via.placeholder.com/172x58"
+                    />
+                  </div>
+                </div>
+                <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-52 h-52 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <img
+                      className="1 w-44 h-10"
+                      src="https://via.placeholder.com/172x40"
+                    />
+                  </div>
+                </div>
+                <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-52 h-52 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <img
+                      className="Image3 w-44 h-11"
+                      src="https://via.placeholder.com/172x44"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
