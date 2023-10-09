@@ -69,9 +69,17 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="Cardmedia flex-col justify-start items-start inline-flex">
+            <div className="Cardmedia">
               <div className="LibraryPlaceholderImage bg-black bg-opacity-5 justify-center items-center inline-flex">
-                <img className="Image39 w-full" src="/graphic2.png" />
+                <Image
+                  className="Image39"
+                  src="/graphic2.png"
+                  alt="Image39"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "auto" }}
+                />
               </div>
             </div>
           </div>
@@ -289,39 +297,51 @@ const Landing = () => {
                 </div>
                 <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
                   <div className="LibraryPlaceholderImage w-52 h-52 p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <img
-                      className="Wtw1 w-32 h-32 rounded-2xl"
-                      src="https://via.placeholder.com/130x130"
-                    />
+                    <div className="Wtw1 w-32 h-32 rounded-2xl relative">
+                      <Image src="/partner-wolf.png" alt="Wtw1" fill={true} />
+                    </div>
                   </div>
                 </div>
                 <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
                   <div className="LibraryPlaceholderImage w-52 h-52 p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <img
-                      className="1 w-32 h-32"
-                      src="https://via.placeholder.com/130x130"
-                    />
+                    <div className="Playmining w-32 h-32 relative">
+                      <Image
+                        src="/partner-playmining.png"
+                        alt="Playmining"
+                        fill={true}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
                   <div className="LibraryPlaceholderImage w-52 h-52 px-16 py-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <img
-                      className="KMSKDeinze1 w-20 h-32"
-                      src="https://via.placeholder.com/76x130"
-                    />
+                    <div className="KMSKDeinze1 w-20 h-32 relative">
+                      <Image
+                        className="KMSKDeinze1 w-20 h-32"
+                        src="/partner-kmsk.png"
+                        alt="KMSKDeinze1"
+                        fill={true}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
                   <div className="LibraryPlaceholderImage px-8 py-14 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
                     <div className="Frame48095537 flex-col justify-start items-center gap-2 inline-flex">
-                      <img
-                        className="Logo2 w-16 h-16"
-                        src="https://via.placeholder.com/69x69"
-                      />
-                      <img
-                        className="Logo1 w-36 h-6"
-                        src="https://via.placeholder.com/147x23"
-                      />
+                      <div className="Logo2 w-16 h-16 relative">
+                        <Image
+                          src="/partner-digital-asset.png"
+                          alt="Logo2"
+                          fill={true}
+                        />
+                      </div>
+                      <div className="Logo1 w-36 h-6 relative">
+                        <Image
+                          src="/partner-digital-asset-title.png"
+                          alt="Logo1"
+                          fill={true}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -329,34 +349,179 @@ const Landing = () => {
               <div className="CardGroup justify-center items-center gap-6 inline-flex">
                 <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
                   <div className="LibraryPlaceholderImage w-52 h-52 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <img
-                      className="EternalCrypt1 w-44 h-11"
-                      src="https://via.placeholder.com/172x44"
-                    />
+                    <div className="EternalCrypt1 w-44 h-11 relative">
+                      <Image
+                        src="/partner-eternal-crypt.png"
+                        alt="EternalCrypt1"
+                        fill={true}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
                   <div className="LibraryPlaceholderImage w-52 h-52 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <img
-                      className="1 w-44 h-14"
-                      src="https://via.placeholder.com/172x58"
-                    />
+                    <div className="Sakura w-44 h-14 relative">
+                      <Image
+                        src="/partner-sakura-guide-game.png"
+                        alt="Sakura"
+                        fill={true}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
                   <div className="LibraryPlaceholderImage w-52 h-52 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <img
-                      className="1 w-44 h-10"
-                      src="https://via.placeholder.com/172x40"
-                    />
+                    <div className="PlaysiaTV w-44 h-10 relative">
+                      <Image
+                        src="/partner-playsia-tv.png"
+                        alt="PlaysiaTV"
+                        fill={true}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="Cardmedia w-52 h-52 rounded-2xl flex-col justify-start items-start inline-flex">
                   <div className="LibraryPlaceholderImage w-52 h-52 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <img
-                      className="Image3 w-44 h-11"
-                      src="https://via.placeholder.com/172x44"
-                    />
+                    <div className="ACA w-44 h-11 relative">
+                      <Image src="/partner-aca.png" alt="ACA" fill={true} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="News">
+        <div className="container">
+          <div className="justify-center items-center inline-flex">
+            <div className="Wrapper self-stretch flex-col justify-start items-start gap-16 inline-flex">
+              <div className="Title w-full justify-between items-center inline-flex">
+                <div className="Title text-white text-4xl font-bold">
+                  Browse our latest news
+                </div>
+                <div className="Button px-8 py-2 bg-sky-500 rounded-3xl shadow flex-col justify-center items-center inline-flex">
+                  <div className="Base justify-center items-center gap-2 inline-flex">
+                    <div className="Button text-white text-base font-medium uppercase leading-relaxed tracking-wide">
+                      See All
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="Cardgroup grid grid-cols-3 gap-6">
+                <div className="Card p-4 bg-neutral-200 bg-opacity-5 rounded-2xl border border-white border-opacity-10 flex-col justify-start items-start inline-flex">
+                  <div className="Cardmedia flex-col justify-start items-start flex">
+                    <div className="LibraryPlaceholderImage relative w-full h-44 bg-black bg-opacity-5 justify-center items-center inline-flex">
+                      <Image
+                        className="rounded-lg"
+                        src="/news-x-eternal-crypt.png"
+                        alt="NewsX"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "100%" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="Cardheader py-4 justify-center items-start inline-flex">
+                    <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
+                      <div className="EternalCryptWizardryBcSignsPartnershipWithSoutheastAsiaGameGuildGarudaGuildGames text-white text-base font-bold leading-normal tracking-tight">
+                        "Eternal Crypt - Wizardry BC -" signs partnership with
+                        Southeast Asia game guild "Garuda Guild Games"
+                      </div>
+                      <div className="DividerHorizontal h-px border border-white border-opacity-10 flex-col justify-start items-start flex">
+                        <div className="MinHeight w-px h-px relative" />
+                      </div>
+                      <div className="GggEnvoyPortalThePioneerOfTheWeb3PaymentSolution opacity-40 text-white text-sm font-normal leading-tight tracking-tight">
+                        GGG "Envoy Portal", the pioneer of the Web3 payment
+                        solution.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Description w-full justify-end items-start inline-flex">
+                    <div className="Month text-white text-xs font-normal leading-none tracking-tight">
+                      September 2023
+                    </div>
+                    <div className="Publisher text-white text-xs font-normal leading-none tracking-tight">
+                      prtimes.jp
+                    </div>
+                  </div>
+                </div>
+                <div className="Card p-4 bg-neutral-200 bg-opacity-5 rounded-2xl border border-white border-opacity-10 flex-col justify-start items-start inline-flex">
+                  <div className="Cardmedia h-44 flex-col justify-start items-start flex">
+                    <div className="LibraryPlaceholderImage relative w-full h-44 bg-black bg-opacity-5 justify-center items-center inline-flex">
+                      <Image
+                        className="rounded-lg"
+                        src="/news-x-playmining.png"
+                        alt="NewsXPlaymining"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "100%" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="Cardheader py-4 justify-center items-start inline-flex">
+                    <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
+                      <div className="EternalCryptWizardryBcSignsPartnershipWithSoutheastAsiaGameGuildGarudaGuildGames text-white text-base font-bold leading-normal tracking-tight">
+                        "Eternal Crypt - Wizardry BC -" signs partnership with
+                        Southeast Asia game guild "Garuda Guild Games"
+                      </div>
+                      <div className="DividerHorizontal h-px border border-white border-opacity-10 flex-col justify-start items-start flex">
+                        <div className="MinHeight w-px h-px relative" />
+                      </div>
+                      <div className="GggEnvoyPortalThePioneerOfTheWeb3PaymentSolution opacity-40 text-white text-sm font-normal leading-tight tracking-tight">
+                        GGG "Envoy Portal", the pioneer of the Web3 payment
+                        solution.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Description w-full justify-end items-start inline-flex">
+                    <div className="Month text-white text-xs font-normal leading-none tracking-tight">
+                      September 2023
+                    </div>
+                    <div className="Publisher text-white text-xs font-normal leading-none tracking-tight">
+                      prtimes.jp
+                    </div>
+                  </div>
+                </div>
+                <div className="Card p-4 bg-neutral-200 bg-opacity-5 rounded-2xl border border-white border-opacity-10 flex-col justify-start items-start inline-flex">
+                  <div className="Cardmedia h-44 flex-col justify-start items-start flex">
+                    <div className="LibraryPlaceholderImage relative w-full h-44 bg-black bg-opacity-5 justify-center items-center inline-flex">
+                      <Image
+                        className="rounded-lg"
+                        src="/news-playsia-tv.png"
+                        alt="NewsXPlaysia"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "100%" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="Cardheader py-4 justify-center items-start inline-flex">
+                    <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
+                      <div className="EternalCryptWizardryBcSignsPartnershipWithSoutheastAsiaGameGuildGarudaGuildGames text-white text-base font-bold leading-normal tracking-tight">
+                        "Eternal Crypt - Wizardry BC -" signs partnership with
+                        Southeast Asia game guild "Garuda Guild Games"
+                      </div>
+                      <div className="DividerHorizontal h-px border border-white border-opacity-10 flex-col justify-start items-start flex">
+                        <div className="MinHeight w-px h-px relative" />
+                      </div>
+                      <div className="GggEnvoyPortalThePioneerOfTheWeb3PaymentSolution opacity-40 text-white text-sm font-normal leading-tight tracking-tight">
+                        GGG "Envoy Portal", the pioneer of the Web3 payment
+                        solution.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Description w-full justify-end items-start inline-flex">
+                    <div className="Month text-white text-xs font-normal leading-none tracking-tight">
+                      September 2023
+                    </div>
+                    <div className="Publisher text-white text-xs font-normal leading-none tracking-tight">
+                      prtimes.jp
+                    </div>
                   </div>
                 </div>
               </div>
