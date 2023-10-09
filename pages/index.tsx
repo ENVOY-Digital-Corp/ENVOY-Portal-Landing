@@ -1,37 +1,10 @@
 /* eslint-disable quotes */
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward"
-import { Box, Button } from "@mui/material"
-
-import { SwiperSlide } from "swiper/react"
-
-import bgLeft from "@/assets/images/bg-2.png"
-import bgFeature from "@/assets/images/bg-feature.png"
-import bgFooter from "@/assets/images/bg-footer.png"
-import bigLogo from "@/assets/images/big-envoy-logo.png"
-import boxEl from "@/assets/images/box-el.png"
-import csgo from "@/assets/images/csgo.png"
-import headerIllus from "@/assets/images/header-illus.png"
-import hw1 from "@/assets/images/hw1.png"
-import hw2 from "@/assets/images/hw2.png"
-import hw3 from "@/assets/images/hw3.png"
-import hw4 from "@/assets/images/hw4.png"
-import hw5 from "@/assets/images/hw5.png"
-import minecraft from "@/assets/images/minecraft.png"
-import sandbox from "@/assets/images/sandbox.png"
-import snm1 from "@/assets/images/snm1.png"
-import snm2 from "@/assets/images/snm2.png"
-import snm3 from "@/assets/images/snm3.png"
-import sorare from "@/assets/images/sorare.png"
-import sprinterland from "@/assets/images/sprinterland.png"
-import FeatureCard from "@/components/Cards/FeaturesCard"
-import SectionSlider from "@/components/Landing/Section/SectionSlider"
-import Link from "next/link"
 import { Element } from "react-scroll"
 import Image from "next/image"
 
 const Landing = () => {
   return (
-    <div className="LandingPage bg-stone-950 font-['Euclid_Circular_B']">
+    <div className="LandingPage">
       <div className="HeroSection relative">
         <div className="Bg w-full h-full left-0 top-0 absolute">
           <div className="Ellipse1 w-full h-full left-0 top-0 absolute opacity-20 bg-cyan-900 rounded-full blur-3xl" />

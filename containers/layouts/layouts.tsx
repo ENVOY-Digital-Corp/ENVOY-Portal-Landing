@@ -25,7 +25,7 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
   ...props
 }) => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-stone-950 text-white font-['Euclid_Circular_B']">
       <Head>
         <title>Envoy Portal</title>
         <link rel="icon" type="image/png" href="/envoy-logo-white.png" />
@@ -57,7 +57,7 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
       </Head>
       <Navigation />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

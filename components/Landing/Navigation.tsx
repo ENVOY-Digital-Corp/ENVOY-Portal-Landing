@@ -26,7 +26,7 @@ const Navigation = () => {
   }
 
   return (
-    <nav className="bg-[#12082B] h-[70px] z-40">
+    <nav className="h-[70px] z-40">
       <div className="container">
         <div className="flex justify-between h-[70px] items-center">
           <div>
@@ -58,20 +58,7 @@ const Navigation = () => {
               sm:p-0
             "
           >
-            <ul className="sm:flex sm:space-x-10 space-y-4 sm:space-y-0 uppercase font-medium items-center">
-              <li>
-                <div>
-                  <ScrollLink
-                    to="about"
-                    smooth={true}
-                    className="cursor-pointer"
-                  >
-                    <Button variant="text" className="text-white">
-                      About
-                    </Button>
-                  </ScrollLink>
-                </div>
-              </li>
+            <ul className="sm:flex sm:space-x-5 space-y-4 sm:space-y-0 font-medium items-center">
               <li>
                 <div>
                   <ScrollLink
@@ -79,8 +66,21 @@ const Navigation = () => {
                     smooth={true}
                     className="cursor-pointer"
                   >
-                    <Button variant="text" className="text-white">
+                    <Button variant="text" className="text-white normal-case">
                       Feature
+                    </Button>
+                  </ScrollLink>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <ScrollLink
+                    to="about"
+                    smooth={true}
+                    className="cursor-pointer"
+                  >
+                    <Button variant="text" className="text-white normal-case">
+                      About
                     </Button>
                   </ScrollLink>
                 </div>
@@ -90,7 +90,7 @@ const Navigation = () => {
                   <Button
                     variant="text"
                     onClick={handleFollowClick}
-                    className="text-white"
+                    className="text-white normal-case"
                     endIcon={<ExpandMoreIcon />}
                   >
                     Follow
@@ -131,14 +131,23 @@ const Navigation = () => {
                 </div>
               </li>
               <li>
+                <Link href="#">
+                  <Button variant="text" className="text-white normal-case">
+                    Blog
+                  </Button>
+                </Link>
+              </li>
+              <li>
                 <div>
                   <Link href="https://app.envoyportal.com">
                     <Button
                       variant="contained"
-                      sx={{ color: "white" }}
-                      color="warning"
+                      className="bg-slate-400 bg-opacity-20 rounded-full text-white"
                     >
-                      Launch App
+                      <div className="justify-center items-center gap-2 inline-flex">
+                        <div>Launch App</div>
+                        {/* <div>{">"}</div> */}
+                      </div>
                     </Button>
                   </Link>
                 </div>
