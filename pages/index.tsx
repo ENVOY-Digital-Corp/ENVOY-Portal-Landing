@@ -27,415 +27,234 @@ import FeatureCard from "@/components/Cards/FeaturesCard"
 import SectionSlider from "@/components/Landing/Section/SectionSlider"
 import Link from "next/link"
 import { Element } from "react-scroll"
+import Image from "next/image"
 
 const Landing = () => {
   return (
-    <div>
-      <section>
-        <div className="container">
-          <div className="flex items-center">
-            <Box
-              className="sm:w-4/5"
-              sx={{
-                "&:after": {
-                  background: `url(${bgLeft.src}) left`,
-                  position: "absolute",
-                  left: 0,
-                  top: 70,
-                  width: {
-                    xs: "100%",
-                    sm: "50%",
-                  },
-                  backgroundSize: {
-                    xs: "cover",
-                    md: "contain",
-                  },
-                  backgroundRepeat: "no-repeat",
-                  height: 500,
-                  zIndex: 1,
-                  content: '" "',
-                },
-              }}
-            >
-              <div className="text-3xl sm:text-4xl md:text-5xl relative z-10">
-                <p className=" uppercase font-extrabold leading-normal">
-                  own your <span className="text-secondary">games</span>,
-                </p>
-                <p className="uppercase font-bold leading-normal">
-                  build your <span className="text-secondary">stash</span>,
-                </p>
-                <p className="uppercase font-bold leading-normal">
-                  earn real <span className="text-secondary">rewards!</span>
-                </p>
-                <div className="mt-8">
-                  <Link href="https://app.envoyportal.com">
-                    <Button
-                      variant="contained"
-                      sx={{ color: "white" }}
-                      size="large"
-                      color="warning"
-                    >
-                      Launch App
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </Box>
-            <Box
-              className="sm:w-1/2 h-[500px]"
-              sx={{
-                "&:after": {
-                  background: `url(${headerIllus.src}) right`,
-                  position: "absolute",
-                  right: "10%",
-                  top: 70,
-                  display: {
-                    xs: "none",
-                    sm: "block",
-                  },
-                  width: "60%",
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                  height: 500,
-                  // eslint-disable-next-line quotes
-                  content: '" "',
-                },
-              }}
-            ></Box>
+    <div className="LandingPage bg-stone-950 font-['Euclid_Circular_B']">
+      <div className="HeroSection relative">
+        <div className="Bg w-full h-full left-0 top-0 absolute">
+          <div className="Ellipse1 w-full h-full left-0 top-0 absolute opacity-20 bg-cyan-900 rounded-full blur-3xl" />
+          <div className="MaskGroup w-full h-full left-0 bottom-0 absolute">
+            <img
+              className="Aset22 w-[50rem] h-96 left-0 bottom-0 absolute opacity-60"
+              src="/graphic1.png"
+            />
           </div>
         </div>
-      </section>
-      <Element name="about">
-        <section className="py-12">
-          <div className="container">
-            <div className="max-w-lg mx-auto text-center">
-              <h3 className="text-4xl font-bold uppercase">
-                portal to <span className="text-secondary">unlimited</span>{" "}
-                possibility
-              </h3>
-              <p className="mt-6">
-                Buy whatever you want from any game.{" "}
-                <span className="text-ep-yellow">
-                  No Credit Card, no PayPal, no USD/EUR needed
-                </span>
-                . Just pay with Local Currency (Bank Transfer or e-Wallets).
-              </p>
-            </div>
-            <div className="mt-6">
-              <SectionSlider>
-                <SwiperSlide>
-                  <div className="relative">
-                    <div>
-                      <img src={sprinterland.src} alt="Envoy Portal X GGG" />
-                      <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
-                        <p>Buy and build your ultimate deck</p>
-                        <div className="flex-none">
-                          <Link href="https://app.envoyportal.com">
-                            <Button
-                              variant="contained"
-                              sx={{ color: "white" }}
-                              color="warning"
-                            >
-                              Launch App
-                            </Button>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="relative">
-                    <div>
-                      <img src={minecraft.src} alt="Envoy Portal X GGG" />
-                      <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
-                        <p>Buy packs from marketplace</p>
-                        <div className="flex-none">
-                          <Link href="https://app.envoyportal.com">
-                            <Button
-                              variant="contained"
-                              sx={{ color: "white" }}
-                              color="warning"
-                            >
-                              Launch App
-                            </Button>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="relative">
-                    <div>
-                      <img src={sorare.src} alt="Envoy Portal X GGG" />
-                      <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
-                        <p>Buy your dream players</p>
-                        <div className="flex-none">
-                          <Link href="https://app.envoyportal.com">
-                            <Button
-                              variant="contained"
-                              sx={{ color: "white" }}
-                              color="warning"
-                            >
-                              Launch App
-                            </Button>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="relative">
-                    <div>
-                      <img src={csgo.src} alt="Envoy Portal X GGG" />
-                      <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
-                        <p>Buy rare CS:GO skins</p>
-                        <div className="flex-none">
-                          <Link href="https://app.envoyportal.com">
-                            <Button
-                              variant="contained"
-                              sx={{ color: "white" }}
-                              color="warning"
-                            >
-                              Launch App
-                            </Button>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="relative">
-                    <div>
-                      <img src={sandbox.src} alt="Envoy Portal X GGG" />
-                      <div className="ml-5 mb-4 justify-center mt-4 flex text-white text-xl space-x-3 items-center font-bold">
-                        <p>Customize your avatar</p>
-                        <div className="flex-none">
-                          <Link href="https://app.envoyportal.com">
-                            <Button
-                              variant="contained"
-                              sx={{ color: "white" }}
-                              color="warning"
-                            >
-                              Launch App
-                            </Button>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              </SectionSlider>
-            </div>
-          </div>
-        </section>
-      </Element>
-      <Box
-        sx={{
-          "&:after": {
-            background: `url(${boxEl.src}) right`,
-            position: "absolute",
-            right: 0,
-            top: -130,
-            width: "600px",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            height: "400px",
-            content: '" "',
-          },
-        }}
-        className="pt-[200px] pb-12 relative"
-      >
+
         <div className="container">
-          <div className="block sm:flex items-center space-x-3">
-            <div className="sm:w-4/12">
-              <div className="max-w-lg text-center sm:text-left">
-                <h3 className="text-6xl font-bold uppercase">
-                  how it <span className="text-ep-yellow">work</span>
-                </h3>
-                <div className="mt-6 text-lg">
-                  <a href="#">
-                    <span>Check it out</span>
-                    <ArrowForwardIcon />
-                  </a>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="Text flex-col justify-center items-start gap-8 inline-flex">
+              <div className="Text flex-col justify-center items-center gap-6 flex">
+                <div className="CompleteGatewayForDigitalAssetNeeds text-neutral-50 text-5xl font-bold self-stretch">
+                  Complete Gateway
+                  <br />
+                  for Digital Asset
+                  <br />
+                  Needs!
+                </div>
+                <div className="TheSimpleWayToTransactionsAndTradesWithManyDigitalCurrenciesInSinglePlatform self-stretch text-neutral-50 text-base font-normal leading-normal tracking-tight">
+                  The simple way to transactions and trades with many digital
+                  currencies in single platform.
+                </div>
+              </div>
+              <div className="Button px-5 py-2 bg-neutral-200 bg-opacity-20 rounded-full backdrop-blur-xl flex-col justify-center items-center flex">
+                <div className="Base justify-center items-center gap-2 inline-flex">
+                  <div className="Button text-white text-base font-normal leading-normal tracking-tight">
+                    Launch App
+                  </div>
+                  <div className="MaskedIcon h-5 flex-col justify-center items-center inline-flex">
+                    <div className="IconRight w-6 h-6 relative flex-col justify-start items-start flex" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="sm:w-8/12 mt-10 sm:mt-0">
-              <SectionSlider>
-                <SwiperSlide>
-                  <div>
-                    <img src={hw1.src} alt="" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div>
-                    <img src={hw2.src} alt="" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div>
-                    <img src={hw3.src} alt="" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div>
-                    <img src={hw4.src} alt="" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div>
-                    <img src={hw5.src} alt="" />
-                  </div>
-                </SwiperSlide>
-              </SectionSlider>
+            <div className="Cardmedia flex-col justify-start items-start inline-flex">
+              <div className="LibraryPlaceholderImage bg-black bg-opacity-5 justify-center items-center inline-flex">
+                <img className="Image39 w-full" src="/graphic2.png" />
+              </div>
             </div>
           </div>
-        </div>
-      </Box>
-      <Box
-        sx={{
-          "&:after": {
-            background: `url(${bgFeature.src}) top`,
-            position: "absolute",
-            right: 0,
-            top: 0,
-            left: 0,
-            width: "100%",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            height: "100%",
-            content: '" "',
-          },
-        }}
-        className="py-12 relative"
-      >
-        <div className="container">
-          <div className="max-w-lg mx-auto text-center">
-            <p className="uppercase text-xl">
-              Win some tournament prize? .. or do you want to cash out your
-              rewards?
-            </p>
-            <h3 className="text-4xl font-bold uppercase mt-6">
-              say <span className="text-ep-yellow">no more!</span>
-            </h3>
-          </div>
-          <div className="mt-14">
-            <SectionSlider>
-              <SwiperSlide>
-                <div>
-                  <img src={snm1.src} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div>
-                  <img src={snm2.src} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div>
-                  <img src={snm3.src} alt="" />
-                </div>
-              </SwiperSlide>
-            </SectionSlider>
-          </div>
-        </div>
-        <Element name="features">
-          <div className="mt-28">
-            <div className="container">
-              <div className="max-w-lg mx-auto text-center">
-                <h3 className="text-4xl font-bold uppercase">
-                  designed by <span className="text-ep-yellow">gamers</span> for
-                  gamers
-                </h3>
-                <p className="mt-6">
-                  Intuitive solutions designed by Gamers to overcome the
-                  problems within modern gaming ecosystems.
-                </p>
-              </div>
-              <div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-14">
-                  <FeatureCard
-                    title="Global support game"
-                    description="The Portal will keep growing to support every Global Top and
-                Trending Games."
-                  />
-                  <FeatureCard
-                    title="intuitive mechanism"
-                    description="Designed by Gamers to make every experience to be fun and
-                familiar. Skip the tutorial and jump right to the action."
-                  />
-                  <FeatureCard
-                    title="ease of payments"
-                    description="Simply pay with local currency using bank transfer or e-wallet app. No Credit Card, no PayPal or EUR/USD or any foreign payment method needed."
-                  />
-                  <FeatureCard
-                    title="DARK MODE FTW"
-                    description="Because we know, Dark Mode is mandatory. Portal will pamper gamers with sleek, elegant and modern interfaces. Keep you stay in the zone, Winning!"
-                  />
-                  <FeatureCard
-                    title="STATE OF ART CODE QUALITY"
-                    description="Built with battle-tested codes, to ensure maximum security and most efficient experience."
-                  />
-                  <FeatureCard
-                    title="WELL DOCUMENTED"
-                    description="Designed to be modular and developer friendly. Always open to cooperate with any game/project."
-                  />
-                  <FeatureCard
-                    title="COMPETITIVE PRICING"
-                    description="Provide best service with competitive fees, ensuring our users to get the best bang for their bucks."
-                  />
-                  <FeatureCard
-                    title="CASH-IN & CASH-OUT"
-                    description="Vice versa. Use the Portal to plant the seed, use it again to reap the rewards."
-                  />
+          <div className="flex justify-center">
+            <div>
+              <div className="Button w-30 h-7 px-1 py-1 opacity-60 rounded flex-col justify-center items-center inline-flex">
+                <div className="Base justify-center items-center gap-2 inline-flex">
+                  <div className="Button text-neutral-50 text-xs font-medium uppercase leading-snug tracking-wide">
+                    Learn More
+                  </div>
+                  <div className="MaskedIcon h-4 flex-col justify-center items-center inline-flex">
+                    <div className="IconsansBoldArrowDown2 w-4 h-4 relative flex-col justify-start items-start flex" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </Element>
-      </Box>
-      <section className="py-12 relative">
+        </div>
+      </div>
+
+      <div className="Frame48095568">
         <div className="container">
-          <div className="max-w-lg mx-auto text-center relative z-40">
-            <h3 className="text-4xl font-bold uppercase mt-6">
-              .. and so much more!
-            </h3>
-            <div className="mt-8">
-              <Link href="https://app.envoyportal.com">
-                <Button
-                  variant="contained"
-                  sx={{ color: "white" }}
-                  color="warning"
-                >
-                  Launch App
-                </Button>
-              </Link>
+          <div className="flex-col w-full justify-start items-center gap-16 inline-flex">
+            <div className="SectionTitle text-center text-neutral-50 text-4xl font-bold tracking-tight">
+              One stop features to infinite
+              <br />
+              Transactions!
+            </div>
+            <div className="Frame48095567 justify-start items-center gap-12 inline-flex">
+              <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
+                <div className="Text justify-center items-end gap-2 inline-flex">
+                  <div className="999 text-center text-white text-6xl font-medium">
+                    99.999
+                  </div>
+                  <div className=" text-center text-white text-5xl font-medium">
+                    +
+                  </div>
+                </div>
+                <div className="Description text-center text-white text-lg font-medium">
+                  Active user, and growing!
+                </div>
+              </div>
+              <div className="DividerVertical h-28 opacity-40 bg-white flex-col justify-start items-start inline-flex">
+                <div className="MinWidth w-px h-px relative" />
+              </div>
+              <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
+                <div className="Text justify-center items-end gap-2 inline-flex">
+                  <div className="999999 text-center text-white text-6xl font-medium">
+                    99.999.999
+                  </div>
+                  <div className=" text-center text-white text-5xl font-medium">
+                    +
+                  </div>
+                </div>
+                <div className="Description text-center text-white text-lg font-medium">
+                  Transaction
+                </div>
+              </div>
+              <div className="DividerVertical h-28 opacity-40 bg-white flex-col justify-start items-start inline-flex">
+                <div className="MinWidth w-px h-px relative" />
+              </div>
+              <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
+                <div className="Text justify-center items-end gap-2 inline-flex">
+                  <div className=" text-center text-white text-6xl font-medium">
+                    9999
+                  </div>
+                  <div className=" text-center text-white text-5xl font-medium">
+                    +
+                  </div>
+                </div>
+                <div className="Description text-center text-white text-lg font-medium">
+                  Supported Token
+                </div>
+              </div>
+            </div>
+            <div className="SectionTitle text-center text-white text-base font-normal">
+              Envoy Portal provides features that are ready to answer your
+              various digital asset transaction
+              <br />
+              needs quickly, safely and completely. Start your trading now!
             </div>
           </div>
-          <Box
-            sx={{
-              "&:after": {
-                background: `url(${bgFooter.src}) center`,
-                position: "absolute",
-                right: 0,
-                top: 70,
-                left: 0,
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                height: 387,
-                content: '" "',
-              },
-            }}
-            className="mt-14"
-          >
-            <img className="mx-auto h-[120px]" src={bigLogo.src} alt="" />
-          </Box>
         </div>
-      </section>
+      </div>
+
+      <div className="CardGroup">
+        <div className="container">
+          <div className="flex-col justify-start items-end gap-20 inline-flex">
+            <div className="Card self-stretch rounded flex-col justify-start items-start flex">
+              <div className="Paper self-stretch rounded flex-col justify-start items-start flex">
+                <div className="CardElements self-stretch rounded justify-start items-center gap-28 inline-flex">
+                  <div className="Cardheader grow shrink basis-0 p-4 justify-start items-center flex">
+                    <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
+                      <div className="Header self-stretch text-white text-3xl font-bold leading-10 tracking-tight">
+                        Accept Feature
+                      </div>
+                      <div className="Subheader self-stretch text-stone-300 text-base font-normal leading-normal tracking-tight">
+                        Ease of mass disbursement for web3 game guilds to manage
+                        thousands of scholar rewards simultaneously from token
+                        to fiat (bank accounts and e-wallets).
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
+                    <div className="Thumbnail1 w-96 h-64 rounded-lg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="Card self-stretch rounded flex-col justify-start items-start flex">
+              <div className="Paper self-stretch rounded flex-col justify-start items-start flex">
+                <div className="CardElements self-stretch rounded justify-start items-center gap-28 inline-flex">
+                  <div className="Cardmedia w-96 p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
+                    <div className="Thumbnail1 w-96 h-64 rounded-lg" />
+                  </div>
+                  <div className="Cardheader grow shrink basis-0 p-4 justify-start items-center flex">
+                    <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
+                      <div className="Header self-stretch text-white text-3xl font-bold leading-10 tracking-tight">
+                        Bridge Feature
+                      </div>
+                      <div className="Subheader self-stretch text-stone-300 text-base font-normal leading-normal tracking-tight">
+                        An easily facilitate Buy/Sell Web3 digital tokens,
+                        without using any exchange, enable direct fiat payment
+                        like QRIS/e-wallet. No excessive gas-fees, no order
+                        book, no KYC process, with safe and secure transactions.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="Card self-stretch rounded flex-col justify-start items-start flex">
+              <div className="Paper self-stretch rounded flex-col justify-start items-start flex">
+                <div className="CardElements self-stretch rounded justify-start items-center gap-28 inline-flex">
+                  <div className="Cardheader grow shrink basis-0 p-4 justify-start items-center flex">
+                    <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
+                      <div className="Header self-stretch text-white text-3xl font-bold leading-10 tracking-tight">
+                        Trade Feature
+                      </div>
+                      <div className="Subheader self-stretch text-stone-300 text-base font-normal leading-normal tracking-tight">
+                        Trade NFTs, virtual items without the use of middlemen
+                        safely. Automated Escrow to facilitate P2P trade (both
+                        regular & blockchain-based).
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Cardmedia w-96 p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
+                    <div className="Thumbnail1 w-96 h-64 rounded-lg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="Frame48095565">
+        <div className="container">
+          <div className="w-full flex-col justify-start items-center gap-28 inline-flex">
+            <div className="Title self-stretch flex-col justify-start items-center gap-7 flex">
+              <div className="SectionTitle self-stretch text-center text-white text-5xl font-bold font-['Euclid Circular B'] tracking-tight">
+                Simply digital ecosystem for modern
+                <br />
+                Digital trades
+              </div>
+              <div className="Description self-stretch text-center text-white text-base font-normal font-['Euclid Circular B']">
+                A perfect solution for maintenance your digital assets easily
+                <br />
+                and safely with a modern digital ecosystems
+              </div>
+            </div>
+            <div className="Cardmedia w-96 h-96 flex-col justify-center items-center flex">
+              <div className="LibraryPlaceholderImage w-96 h-96 bg-black bg-opacity-5 flex-col justify-center items-center flex">
+                <img
+                  className="Image40 w-96 h-96"
+                  src="https://via.placeholder.com/812x827"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

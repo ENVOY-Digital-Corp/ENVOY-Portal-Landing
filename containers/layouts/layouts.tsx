@@ -29,6 +29,12 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
       <Head>
         <title>Envoy Portal</title>
         <link rel="icon" type="image/png" href="/envoy-logo-white.png" />
+        {/* TODO: use other CDN */}
+        <link
+          href="https://fonts.cdnfonts.com/css/euclid-circular-b"
+          rel="stylesheet"
+        />
+
         <meta name="description" content={defaults.description} />
 
         {/*<!-- Google / Search Engine Tags -->*/}
@@ -51,7 +57,7 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
       </Head>
       <Navigation />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
