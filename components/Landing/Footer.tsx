@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
           <div className="Wrapper absolute w-full h-full">
             <div className="flex w-full h-full items-center">
-              <div className="px-10 grid grid-cols-2">
+              <div className="px-10 w-full grid grid-cols-2">
                 <div className="Cardheader  justify-start items-center flex">
                   <div className="Content w-[35rem] grow shrink basis-0 flex-col justify-start items-start gap-0.5 inline-flex">
                     <div className="Header text-white text-5xl font-semibold leading-10">
