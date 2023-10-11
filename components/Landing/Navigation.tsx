@@ -8,11 +8,11 @@ import logo from "@/assets/images/envoy-white.png"
 import Link from "next/link"
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward"
+import Image from "next/image"
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false)
   const [follow, setFollow] = useState<null | HTMLElement>(null)
-  const mobileMenuRef = useRef<HTMLDivElement>(null)
 
   const handleToggle = (
     e: React.MouseEvent<HTMLButtonElement | HTMLDivElement>
@@ -42,34 +42,39 @@ const Navigation = () => {
           <div className="flex justify-between h-[70px] items-center">
             <div>
               <Link href="/">
-                <img src={logo.src} alt="envoy portal logo" className="w-24" />
+                <div className="w-24 relative">
+                  <Image
+                    src={logo.src}
+                    alt="envoy portal logo"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </div>
               </Link>
             </div>
             <Box
-              sx={{
-                display: {
-                  xs: toggle ? "block" : "none",
-                  sm: "block",
-                },
-              }}
-              className="
+              className={`
+              ${toggle ? "block" : "hidden"}
+              md:block
               absolute
-              sm:relative
+              md:relative
               left-0
               top-[70px]
-              sm:top-auto
+              md:top-auto
               bg-[#0D0B0A]
-              sm:bg-transparent
+              md:bg-transparent
               z-50
               w-full
-              sm:w-auto
+              md:w-auto
               px-8
               py-4
               pb-10
-              sm:p-0
-            "
+              md:p-0
+            `}
             >
-              <ul className="sm:flex sm:space-x-5 space-y-4 sm:space-y-0 font-medium items-center">
+              <ul className="md:flex md:space-x-5 space-y-4 md:space-y-0 font-medium items-center">
                 <li>
                   <div>
                     <ScrollLink
@@ -174,7 +179,7 @@ const Navigation = () => {
                 </li>
               </ul>
             </Box>
-            <div className="sm:hidden">
+            <div className="md:hidden">
               <IconButton onClick={handleToggle} sx={{ color: "white" }}>
                 <DehazeIcon />
               </IconButton>

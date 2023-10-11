@@ -9,13 +9,13 @@ const Landing = () => {
         <div className="Bg w-full h-full left-0 top-0 absolute">
           <div className="Ellipse1 w-full h-full left-0 top-0 absolute opacity-20 bg-cyan-900 rounded-full blur-3xl" />
           <div className="MaskGroup w-full h-full left-0 bottom-0 absolute">
-            <div className="hidden Aset22 w-[50rem] h-96 left-0 bottom-0 md:absolute opacity-60">
+            <div className="Aset22 w-[15rem] h-[20rem] md:w-[35rem] md:h-96 lg:w-[50rem] lg:h-96 left-0 bottom-0 absolute opacity-60">
               <Image src="/graphic1.png" alt="Aset22" fill={true} />
             </div>
           </div>
         </div>
 
-        <div className="container z-40">
+        <div className="container relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="Text flex-col justify-center items-start gap-8 inline-flex">
               <div className="Text flex-col justify-center items-center gap-6 flex">
@@ -43,7 +43,7 @@ const Landing = () => {
               </div>
             </div>
             <div className="Cardmedia">
-              <div className="LibraryPlaceholderImage bg-black bg-opacity-5 justify-center items-center inline-flex">
+              <div className="LibraryPlaceholderImage w-full bg-black bg-opacity-5 justify-center items-center inline-flex">
                 <Image
                   className="Image39"
                   src="/graphic2.png"
