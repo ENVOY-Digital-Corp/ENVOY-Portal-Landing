@@ -9,14 +9,14 @@ const Landing = () => {
         <div className="Bg w-full h-full left-0 top-0 absolute">
           <div className="Ellipse1 w-full h-full left-0 top-0 absolute opacity-20 bg-cyan-900 rounded-full blur-3xl" />
           <div className="MaskGroup w-full h-full left-0 bottom-0 absolute">
-            <div className="Aset22 w-[50rem] h-96 left-0 bottom-0 absolute opacity-60">
+            <div className="hidden Aset22 w-[50rem] h-96 left-0 bottom-0 md:absolute opacity-60">
               <Image src="/graphic1.png" alt="Aset22" fill={true} />
             </div>
           </div>
         </div>
 
-        <div className="container">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="container z-40">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="Text flex-col justify-center items-start gap-8 inline-flex">
               <div className="Text flex-col justify-center items-center gap-6 flex">
                 <div className="CompleteGatewayForDigitalAssetNeeds text-neutral-50 text-5xl font-bold self-stretch">
@@ -81,13 +81,13 @@ const Landing = () => {
               <br />
               Transactions!
             </div>
-            <div className="Frame48095567 justify-start items-center gap-12 inline-flex">
+            <div className="Frame48095567 flex flex-col justify-start items-center gap-12 md:inline-flex md:flex-row">
               <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
                 <div className="Text justify-center items-end gap-2 inline-flex">
-                  <div className="999 text-center text-white text-6xl font-medium">
+                  <div className="999 text-center text-white text-6xl md:max-lg:text-5xl font-medium">
                     99.999
                   </div>
-                  <div className=" text-center text-white text-5xl font-medium">
+                  <div className=" text-center text-white text-5xl md:max-lg:text-4xl font-medium">
                     +
                   </div>
                 </div>
@@ -95,15 +95,15 @@ const Landing = () => {
                   Active user, and growing!
                 </div>
               </div>
-              <div className="DividerVertical h-28 opacity-40 bg-white flex-col justify-start items-start inline-flex">
+              <div className="hidden DividerVertical h-28 opacity-40 bg-white flex-col justify-start items-start md:inline-flex">
                 <div className="MinWidth w-px h-px relative" />
               </div>
               <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
                 <div className="Text justify-center items-end gap-2 inline-flex">
-                  <div className="999999 text-center text-white text-6xl font-medium">
+                  <div className="999999 text-center text-white text-6xl md:max-lg:text-5xl font-medium">
                     99.999.999
                   </div>
-                  <div className=" text-center text-white text-5xl font-medium">
+                  <div className=" text-center text-white text-5xl md:max-lg:text-4xl font-medium">
                     +
                   </div>
                 </div>
@@ -111,15 +111,15 @@ const Landing = () => {
                   Transaction
                 </div>
               </div>
-              <div className="DividerVertical h-28 opacity-40 bg-white flex-col justify-start items-start inline-flex">
+              <div className="hidden DividerVertical h-28 opacity-40 bg-white flex-col justify-start items-start md:inline-flex">
                 <div className="MinWidth w-px h-px relative" />
               </div>
               <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
                 <div className="Text justify-center items-end gap-2 inline-flex">
-                  <div className=" text-center text-white text-6xl font-medium">
+                  <div className=" text-center text-white text-6xl md:max-lg:text-5xl font-medium">
                     9999
                   </div>
-                  <div className=" text-center text-white text-5xl font-medium">
+                  <div className=" text-center text-white text-5xl md:max-lg:text-4xl font-medium">
                     +
                   </div>
                 </div>
@@ -143,7 +143,7 @@ const Landing = () => {
           <div className="flex-col justify-start items-end gap-20 inline-flex">
             <div className="Card self-stretch rounded flex-col justify-start items-start flex">
               <div className="Paper self-stretch rounded flex-col justify-start items-start flex">
-                <div className="CardElements self-stretch rounded justify-start items-center gap-28 inline-flex">
+                <div className="CardElements flex-col md:flex-row self-stretch rounded justify-start items-center gap-28 inline-flex">
                   <div className="Cardheader grow shrink basis-0 p-4 justify-start items-center flex">
                     <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
                       <div className="Header self-stretch text-white text-3xl font-bold leading-10 tracking-tight">
@@ -157,11 +157,21 @@ const Landing = () => {
                     </div>
                   </div>
                   <div className="Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
-                    <div className="Thumbnail1 w-96 h-64 rounded-lg relative">
+                    <div className="hidden md:block Thumbnail1 w-96 h-64 rounded-lg relative">
                       <Image
                         alt="Thumbnail"
                         src="/video-thumbnail.png"
                         fill={true}
+                      />
+                    </div>
+                    <div className="md:hidden Thumbnail1 w-full h-64 rounded-lg relative">
+                      <Image
+                        alt="Thumbnail"
+                        src="/video-thumbnail.png"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "100%" }}
                       />
                     </div>
                   </div>
@@ -170,8 +180,8 @@ const Landing = () => {
             </div>
             <div className="Card self-stretch rounded flex-col justify-start items-start flex">
               <div className="Paper self-stretch rounded flex-col justify-start items-start flex">
-                <div className="CardElements self-stretch rounded justify-start items-center gap-28 inline-flex">
-                  <div className="Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
+                <div className="CardElements flex-col md:flex-row self-stretch rounded justify-start items-center gap-28 inline-flex">
+                  <div className="hidden Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center md:inline-flex">
                     <div className="Thumbnail1 w-96 h-64 rounded-lg relative">
                       <Image
                         alt="Thumbnail"
@@ -193,12 +203,24 @@ const Landing = () => {
                       </div>
                     </div>
                   </div>
+                  <div className="md:hidden Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
+                    <div className="Thumbnail1 w-full h-64 rounded-lg relative">
+                      <Image
+                        alt="Thumbnail"
+                        src="/video-thumbnail.png"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "100%" }}
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="Card self-stretch rounded flex-col justify-start items-start flex">
               <div className="Paper self-stretch rounded flex-col justify-start items-start flex">
-                <div className="CardElements self-stretch rounded justify-start items-center gap-28 inline-flex">
+                <div className="CardElements flex-col md:flex-row self-stretch rounded justify-start items-center gap-28 inline-flex">
                   <div className="Cardheader grow shrink basis-0 p-4 justify-start items-center flex">
                     <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
                       <div className="Header self-stretch text-white text-3xl font-bold leading-10 tracking-tight">
@@ -212,11 +234,21 @@ const Landing = () => {
                     </div>
                   </div>
                   <div className="Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
-                    <div className="Thumbnail1 w-96 h-64 rounded-lg relative">
+                    <div className="hidden md:block Thumbnail1 w-96 h-64 rounded-lg relative">
                       <Image
                         alt="Thumbnail"
                         src="/video-thumbnail.png"
                         fill={true}
+                      />
+                    </div>
+                    <div className="md:hidden Thumbnail1 w-full h-64 rounded-lg relative">
+                      <Image
+                        alt="Thumbnail"
+                        src="/video-thumbnail.png"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "100%" }}
                       />
                     </div>
                   </div>
@@ -244,7 +276,7 @@ const Landing = () => {
             </div>
             <div className="Cardmedia flex-col justify-center items-center flex">
               <div className="LibraryPlaceholderImage bg-black bg-opacity-5 flex-col justify-center items-center flex">
-                <div className="Image40 w-[50rem] h-[50rem] relative">
+                <div className="Image40 w-[20rem] h-[20rem] md:w-[35rem] md:h-[35rem] lg:w-[50rem] lg:h-[50rem] relative">
                   <Image alt="Image40" src="/circle-graphic.png" fill={true} />
                 </div>
               </div>
@@ -259,25 +291,26 @@ const Landing = () => {
             <div className="SectionTitle text-center text-white text-4xl font-bold">
               Our Partners
             </div>
-            <div className="Wrapper flex-col justify-center items-center gap-8 flex">
+            {/* PC */}
+            <div className="hidden Wrapper flex-col justify-center items-center gap-8 md:flex">
               <div className="CardGroup justify-center items-center gap-6 inline-flex">
-                <div className="Cardmedia w-44 h-44 rounded-2xl flex-col justify-start items-start inline-flex">
-                  <div className="LibraryPlaceholderImage w-44 h-44 p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 backdrop-blur-xl justify-center items-center inline-flex">
-                    <div className="GggGarudaIcon2 w-32 h-32 relative">
+                <div className="Cardmedia w-28 h-28 lg:w-44 lg:h-44 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-28 h-28 lg:w-44 lg:h-44 p-5 lg:p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 backdrop-blur-xl justify-center items-center inline-flex">
+                    <div className="GggGarudaIcon2 w-20 h-20 lg:w-32 lg:h-32 relative">
                       <Image alt="Logo" src="/partner-garuda.png" fill={true} />
                     </div>
                   </div>
                 </div>
-                <div className="Cardmedia w-44 h-44 rounded-2xl flex-col justify-start items-start inline-flex">
-                  <div className="LibraryPlaceholderImage w-44 h-44 p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <div className="Wtw1 w-32 h-32 rounded-2xl relative">
+                <div className="Cardmedia w-28 h-28 lg:w-44 lg:h-44 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-28 h-28 lg:w-44 lg:h-44 p-5 lg:p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <div className="Wtw1 w-20 h-20 lg:w-32 lg:h-32 rounded-2xl relative">
                       <Image src="/partner-wolf.png" alt="Wtw1" fill={true} />
                     </div>
                   </div>
                 </div>
-                <div className="Cardmedia w-44 h-44 rounded-2xl flex-col justify-start items-start inline-flex">
-                  <div className="LibraryPlaceholderImage w-44 h-44 p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <div className="Playmining w-32 h-32 relative">
+                <div className="Cardmedia w-28 h-28 lg:w-44 lg:h-44 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-28 h-28 lg:w-44 lg:h-44 p-5 lg:p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <div className="Playmining w-20 h-20 lg:w-32 lg:h-32 relative">
                       <Image
                         src="/partner-playmining.png"
                         alt="Playmining"
@@ -286,11 +319,11 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-                <div className="Cardmedia w-44 h-44 rounded-2xl flex-col justify-start items-start inline-flex">
-                  <div className="LibraryPlaceholderImage w-44 h-44 px-16 py-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <div className="KMSKDeinze1 w-20 h-32 relative">
+                <div className="Cardmedia w-28 h-28 lg:w-44 lg:h-44 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-28 h-28 lg:w-44 lg:h-44 px-8 py-6 lg:px-16 lg:py-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <div className="KMSKDeinze1 w-12 h-20 lg:w-20 lg:h-32 relative">
                       <Image
-                        className="KMSKDeinze1 w-20 h-32"
+                        className="KMSKDeinze1"
                         src="/partner-kmsk.png"
                         alt="KMSKDeinze1"
                         fill={true}
@@ -298,17 +331,17 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-                <div className="Cardmedia w-44 h-44 rounded-2xl flex-col justify-start items-start inline-flex">
-                  <div className="LibraryPlaceholderImage w-44 h-44 px-8 py-14 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                <div className="Cardmedia w-28 h-28 lg:w-44 lg:h-44 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-28 h-28 lg:w-44 lg:h-44 p-5 lg:p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
                     <div className="Frame48095537 flex-col justify-start items-center gap-2 inline-flex">
-                      <div className="Logo2 w-16 h-16 relative">
+                      <div className="Logo2 w-8 h-8 lg:w-16 lg:h-16 relative">
                         <Image
                           src="/partner-digital-asset.png"
                           alt="Logo2"
                           fill={true}
                         />
                       </div>
-                      <div className="Logo1 w-36 h-6 relative">
+                      <div className="Logo1 w-20 h-3 lg:w-36 lg:h-6 relative">
                         <Image
                           src="/partner-digital-asset-title.png"
                           alt="Logo1"
@@ -320,9 +353,9 @@ const Landing = () => {
                 </div>
               </div>
               <div className="CardGroup justify-center items-center gap-6 inline-flex">
-                <div className="Cardmedia w-44 h-44 rounded-2xl flex-col justify-start items-start inline-flex">
-                  <div className="LibraryPlaceholderImage w-44 h-44 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <div className="EternalCrypt1 w-44 h-11 relative">
+                <div className="Cardmedia w-28 h-28 lg:w-44 lg:h-44 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-28 h-28 lg:w-44 lg:h-44 p-5 lg:p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <div className="EternalCrypt1 w-24 h-8 lg:w-44 lg:h-11 relative">
                       <Image
                         src="/partner-eternal-crypt.png"
                         alt="EternalCrypt1"
@@ -331,9 +364,9 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-                <div className="Cardmedia w-44 h-44 rounded-2xl flex-col justify-start items-start inline-flex">
-                  <div className="LibraryPlaceholderImage w-44 h-44 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <div className="Sakura w-44 h-14 relative">
+                <div className="Cardmedia w-28 h-28 lg:w-44 lg:h-44 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-28 h-28 lg:w-44 lg:h-44 p-5 lg:p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <div className="Sakura w-24 h-8 lg:w-44 lg:h-14 relative">
                       <Image
                         src="/partner-sakura-guide-game.png"
                         alt="Sakura"
@@ -342,9 +375,9 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-                <div className="Cardmedia w-44 h-44 rounded-2xl flex-col justify-start items-start inline-flex">
-                  <div className="LibraryPlaceholderImage w-44 h-44 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <div className="PlaysiaTV w-44 h-10 relative">
+                <div className="Cardmedia w-28 h-28 lg:w-44 lg:h-44 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-28 h-28 lg:w-44 lg:h-44 p-5 lg:p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <div className="PlaysiaTV w-24 h-8 lg:w-44 lg:h-10 relative">
                       <Image
                         src="/partner-playsia-tv.png"
                         alt="PlaysiaTV"
@@ -353,11 +386,112 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-                <div className="Cardmedia w-44 h-44 rounded-2xl flex-col justify-start items-start inline-flex">
-                  <div className="LibraryPlaceholderImage w-44 h-44 px-5 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
-                    <div className="ACA w-44 h-11 relative">
+                <div className="Cardmedia w-28 h-28 lg:w-44 lg:h-44 rounded-2xl flex-col justify-start items-start inline-flex">
+                  <div className="LibraryPlaceholderImage w-28 h-28 lg:w-44 lg:h-44 p-5 lg:p-10 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                    <div className="ACA w-24 h-8 lg:w-44 lg:h-11 relative">
                       <Image src="/partner-aca.png" alt="ACA" fill={true} />
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* SP */}
+            <div className="md:hidden Wrapper grid grid-cols-3 justify-center items-center gap-8">
+              <div className="Cardmedia w-24 h-24 rounded-2xl flex-col justify-start items-start inline-flex">
+                <div className="LibraryPlaceholderImage w-24 h-24 p-4 bg-zinc-900 rounded-2xl border border-white border-opacity-10 backdrop-blur-xl justify-center items-center inline-flex">
+                  <div className="GggGarudaIcon2 w-16 h-16 relative">
+                    <Image alt="Logo" src="/partner-garuda.png" fill={true} />
+                  </div>
+                </div>
+              </div>
+              <div className="Cardmedia w-24 h-24 rounded-2xl flex-col justify-start items-start inline-flex">
+                <div className="LibraryPlaceholderImage w-24 h-24 p-4 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                  <div className="Wtw1 w-16 h-16 rounded-2xl relative">
+                    <Image src="/partner-wolf.png" alt="Wtw1" fill={true} />
+                  </div>
+                </div>
+              </div>
+              <div className="Cardmedia w-24 h-24 rounded-2xl flex-col justify-start items-start inline-flex">
+                <div className="LibraryPlaceholderImage w-24 h-24 p-4 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                  <div className="Playmining w-16 h-16 relative">
+                    <Image
+                      src="/partner-playmining.png"
+                      alt="Playmining"
+                      fill={true}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="Cardmedia w-24 h-24 rounded-2xl flex-col justify-start items-start inline-flex">
+                <div className="LibraryPlaceholderImage w-24 h-24 p-4 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                  <div className="KMSKDeinze1 w-10 h-16 relative">
+                    <Image
+                      className="KMSKDeinze1"
+                      src="/partner-kmsk.png"
+                      alt="KMSKDeinze1"
+                      fill={true}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="Cardmedia w-24 h-24 rounded-2xl flex-col justify-start items-start inline-flex">
+                <div className="LibraryPlaceholderImage w-24 h-24 p-4 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                  <div className="Frame48095537 flex-col justify-start items-center gap-2 inline-flex">
+                    <div className="Logo2 w-8 h-8 relative">
+                      <Image
+                        src="/partner-digital-asset.png"
+                        alt="Logo2"
+                        fill={true}
+                      />
+                    </div>
+                    <div className="Logo1 w-14 h-4 relative">
+                      <Image
+                        src="/partner-digital-asset-title.png"
+                        alt="Logo1"
+                        fill={true}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="Cardmediaw-24 h-24 rounded-2xl flex-col justify-start items-start inline-flex">
+                <div className="LibraryPlaceholderImage w-24 h-24 p-4 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                  <div className="EternalCrypt1 w-16 h-5 relative">
+                    <Image
+                      src="/partner-eternal-crypt.png"
+                      alt="EternalCrypt1"
+                      fill={true}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="Cardmedia w-24 h-24 rounded-2xl flex-col justify-start items-start inline-flex">
+                <div className="LibraryPlaceholderImage w-24 h-24 p-4 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                  <div className="Sakura w-16 h-5 relative">
+                    <Image
+                      src="/partner-sakura-guide-game.png"
+                      alt="Sakura"
+                      fill={true}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="Cardmedia w-24 h-24 rounded-2xl flex-col justify-start items-start inline-flex">
+                <div className="LibraryPlaceholderImage w-24 h-24 p-4 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                  <div className="PlaysiaTV w-16 h-5 relative">
+                    <Image
+                      src="/partner-playsia-tv.png"
+                      alt="PlaysiaTV"
+                      fill={true}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="Cardmedia w-24 h-24 rounded-2xl flex-col justify-start items-start inline-flex">
+                <div className="LibraryPlaceholderImage w-24 h-24 p-4 bg-zinc-900 rounded-2xl border border-white border-opacity-10 justify-center items-center inline-flex">
+                  <div className="ACA w-16 h-5 relative">
+                    <Image src="/partner-aca.png" alt="ACA" fill={true} />
                   </div>
                 </div>
               </div>
@@ -382,7 +516,7 @@ const Landing = () => {
                   </div>
                 </div>
               </div>
-              <div className="Cardgroup grid grid-cols-3 gap-6">
+              <div className="Cardgroup grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="Card p-4 bg-neutral-200 bg-opacity-5 rounded-2xl border border-white border-opacity-10 flex-col justify-start items-start inline-flex">
                   <div className="Cardmedia flex-col justify-start items-start flex">
                     <div className="LibraryPlaceholderImage relative w-full h-44 bg-black bg-opacity-5 justify-center items-center inline-flex">
