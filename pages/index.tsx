@@ -5,7 +5,7 @@ import Image from "next/image"
 const Landing = () => {
   return (
     <div className="LandingPage">
-      <div className="HeroSection relative">
+      <div className="HeroSection relative pt-20">
         <div className="Bg w-full h-full left-0 top-0 absolute">
           <div className="Ellipse1 w-full h-full left-0 top-0 absolute opacity-20 bg-cyan-900 rounded-full blur-3xl" />
           <div className="MaskGroup w-full h-full left-0 bottom-0 absolute">
@@ -56,7 +56,7 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-32">
             <div>
               <div className="Button w-30 h-7 px-1 py-1 opacity-60 rounded flex-col justify-center items-center inline-flex">
                 <div className="Base justify-center items-center gap-2 inline-flex">
@@ -73,7 +73,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="Frame48095568">
+      <div className="Frame48095568 mt-32">
         <div className="container">
           <div className="flex-col w-full justify-start items-center gap-16 inline-flex">
             <div className="SectionTitle text-center text-neutral-50 text-4xl font-bold tracking-tight">
@@ -138,7 +138,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="CardGroup">
+      <div className="CardGroup mt-48">
         <div className="container">
           <div className="flex-col justify-start items-end gap-20 inline-flex">
             <div className="Card self-stretch rounded flex-col justify-start items-start flex">
@@ -227,7 +227,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="Frame48095565">
+      <div className="Frame48095565 mt-40">
         <div className="container">
           <div className="w-full flex-col justify-start items-center gap-28 inline-flex">
             <div className="Title self-stretch flex-col justify-start items-center gap-7 flex">
@@ -253,7 +253,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="Frame48095566">
+      <div className="Frame48095566 mt-40">
         <div className="container">
           <div className="flex-col w-full justify-start items-center gap-16 inline-flex">
             <div className="SectionTitle text-center text-white text-4xl font-bold">
@@ -366,7 +366,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="News">
+      <div className="News mt-40">
         <div className="container">
           <div className="justify-center items-center inline-flex">
             <div className="Wrapper self-stretch flex-col justify-start items-start gap-16 inline-flex">

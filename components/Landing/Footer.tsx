@@ -4,7 +4,7 @@ import { Element, Link as ScrollLink } from "react-scroll"
 
 const Footer = () => {
   return (
-    <div className="Footer w-full px-16 pt-12 pb-6 bg-stone-950 flex-col justify-start items-start gap-12 inline-flex">
+    <div className="Footer w-full px-16 pb-6 pt-[19rem] bg-stone-950 flex-col justify-start items-start gap-12 inline-flex">
       <div className="Top self-stretch h-96 flex-col justify-start items-start gap-12 flex">
         <div className="MaskGroup self-stretch h-72 relative">
           <div className="Background left-0 top-0 w-full h-full absolute bg-black rounded-3xl">
