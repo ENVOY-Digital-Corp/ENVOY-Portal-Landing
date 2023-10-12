@@ -9,6 +9,7 @@ import Link from "next/link"
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward"
 import Image from "next/image"
+import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos"
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false)
@@ -164,16 +165,18 @@ const Navigation = () => {
                 </li>
                 <li>
                   <div>
-                    <Link href="https://app.envoyportal.com">
-                      <Button
-                        variant="contained"
-                        className="bg-slate-400 bg-opacity-20 rounded-full text-white"
-                      >
-                        <div className="justify-center items-center gap-2 inline-flex">
-                          <div>Launch App</div>
-                          {/* <div>{">"}</div> */}
+                    <Link
+                      href="https://app.envoyportal.com"
+                      className="Button px-5 py-2 bg-neutral-200 bg-opacity-20 rounded-full backdrop-blur-xl flex-col justify-center items-center flex"
+                    >
+                      <div className="Base justify-center items-center gap-2 inline-flex">
+                        <div className="Button text-white text-base font-normal leading-normal tracking-tight uppercase">
+                          Launch App
                         </div>
-                      </Button>
+                        <div className="MaskedIcon flex-col justify-center items-center inline-flex">
+                          <ArrowForwardIos className="IconRight relative flex-col justify-start items-start flex text-sm" />
+                        </div>
+                      </div>
                     </Link>
                   </div>
                 </li>
