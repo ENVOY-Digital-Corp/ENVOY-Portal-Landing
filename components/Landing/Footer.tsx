@@ -93,16 +93,28 @@ const Footer = () => {
               <div className="List grow shrink basis-0 self-stretch flex-col justify-start items-start inline-flex">
                 <div className="Button self-stretch h-10 px-2.5 py-2 rounded flex-col justify-center items-center flex">
                   <div className="Base justify-center items-center gap-2 inline-flex">
-                    <div className="Button text-white text-base font-medium uppercase leading-relaxed tracking-wide">
-                      About
-                    </div>
+                    <ScrollLink
+                      to="about"
+                      smooth={true}
+                      className="cursor-pointer"
+                    >
+                      <div className="Button text-white text-base font-medium uppercase leading-relaxed tracking-wide">
+                        About
+                      </div>
+                    </ScrollLink>
                   </div>
                 </div>
                 <div className="Button self-stretch h-10 px-2.5 py-2 rounded flex-col justify-center items-center flex">
                   <div className="Base justify-center items-center gap-2 inline-flex">
-                    <div className="Button text-white text-base font-medium uppercase leading-relaxed tracking-wide">
-                      Features
-                    </div>
+                    <ScrollLink
+                      to="features"
+                      smooth={true}
+                      className="cursor-pointer"
+                    >
+                      <div className="Button text-white text-base font-medium uppercase leading-relaxed tracking-wide">
+                        Features
+                      </div>
+                    </ScrollLink>
                   </div>
                 </div>
               </div>
