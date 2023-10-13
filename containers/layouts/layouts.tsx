@@ -13,9 +13,9 @@ export const getBaseLayout = (page: React.ReactNode) => {
 }
 
 const defaults = {
-  title: "Envoy Portal",
+  title: "ENVOY Portal",
   description:
-    "Intuitive solutions designed by Gamers to overcome the problems within modern gaming ecosystems.",
+    "ENVOY Portal is the one stop Gateway for all Digital Assets, a fully decentralised (non-custodial) app where users can Buy/Sell Crypto tokens with fiat money and digital payment, easier than ordering food online.",
   image: "/og.png",
   url: "https://twitter.com/envoycorp",
 }
@@ -25,10 +25,11 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
   ...props
 }) => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-stone-950 text-white font-['Euclid_Circular_B']">
       <Head>
         <title>Envoy Portal</title>
         <link rel="icon" type="image/png" href="/envoy-logo-white.png" />
+
         <meta name="description" content={defaults.description} />
 
         {/*<!-- Google / Search Engine Tags -->*/}
