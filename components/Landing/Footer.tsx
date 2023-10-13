@@ -11,7 +11,7 @@ const Footer = () => {
             {/* <div className="Rectangle171 left-0 top-0 absolute " /> */}
             <Image
               className="Image41 rounded-3xl"
-              src="/footer-graphic.png"
+              src="/footer-graphic.webp"
               alt="Image41"
               width={0}
               height={0}

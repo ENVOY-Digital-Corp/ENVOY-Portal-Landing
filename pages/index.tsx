@@ -14,7 +14,7 @@ const Landing = () => {
           <div className="Ellipse1 w-full h-full left-0 top-0 absolute opacity-20 bg-cyan-900 rounded-full blur-3xl" />
           <div className="MaskGroup w-full h-full left-0 bottom-0 absolute">
             <div className="Aset22 w-[15rem] h-[20rem] md:w-[35rem] md:h-96 lg:w-[50rem] lg:h-96 left-0 bottom-0 absolute opacity-60">
-              <Image src="/graphic1.png" alt="Aset22" fill={true} />
+              <Image src="/graphic1.webp" alt="Aset22" fill={true} />
             </div>
           </div>
         </div>
@@ -24,15 +24,14 @@ const Landing = () => {
             <div className="Text flex-col justify-center items-center md:items-start gap-8 inline-flex">
               <div className="Text flex-col justify-center items-center gap-6 flex text-center md:text-start">
                 <div className="CompleteGatewayForDigitalAssetNeeds text-neutral-50 text-4xl md:text-5xl font-bold self-stretch">
-                  Complete Gateway
+                  The Ultimate
                   <br />
-                  for Digital Asset
+                  Non-Custodial
                   <br />
-                  Needs!
+                  Crypto Gateway!
                 </div>
                 <div className="TheSimpleWayToTransactionsAndTradesWithManyDigitalCurrenciesInSinglePlatform self-stretch text-neutral-50 text-base font-normal leading-normal tracking-tight">
-                  The simple way to transactions and trades with many digital
-                  currencies in single platform.
+                  One stop solutions to Buy/Sell Crypto Tokens with fiat money and digital payment, easier than ordering food online.
                 </div>
               </div>
               <Link
@@ -53,7 +52,7 @@ const Landing = () => {
               <div className="LibraryPlaceholderImage w-full bg-black bg-opacity-5 justify-center items-center inline-flex">
                 <Image
                   className="Image39"
-                  src="/graphic2.png"
+                  src="/graphic2.webp"
                   alt="Image39"
                   width={0}
                   height={0}
@@ -91,22 +90,22 @@ const Landing = () => {
           <div className="container">
             <div className="flex-col w-full justify-start items-center gap-16 inline-flex">
               <div className="SectionTitle text-center text-neutral-50 text-3xl md:text-4xl font-bold tracking-tight">
-                One stop features to infinite{" "}
-                <br className="hidden md:inline-block" />
-                Transactions!
+                No complex steps, No confusing charts{" "}
+                <br />
+                Enter amount, Sign, get that cash!
               </div>
               <div className="Frame48095567 flex flex-col justify-start items-center gap-6 md:gap-12 md:inline-flex md:flex-row">
                 <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
                   <div className="Text justify-center items-end gap-2 inline-flex">
                     <div className="999 text-center text-white text-6xl md:max-lg:text-5xl font-medium">
-                      99.999
+                      4,500
                     </div>
                     <div className=" text-center text-white text-5xl md:max-lg:text-4xl font-medium">
                       +
                     </div>
                   </div>
                   <div className="Description text-center text-white text-lg font-medium">
-                    Active user, and growing!
+                    Active users, and growing!
                   </div>
                 </div>
 
@@ -117,14 +116,11 @@ const Landing = () => {
                 <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
                   <div className="Text justify-center items-end gap-2 inline-flex">
                     <div className="999999 text-center text-white text-6xl md:max-lg:text-5xl font-medium">
-                      99.999.999
-                    </div>
-                    <div className=" text-center text-white text-5xl md:max-lg:text-4xl font-medium">
-                      +
+                      31,654
                     </div>
                   </div>
                   <div className="Description text-center text-white text-lg font-medium">
-                    Transaction
+                    Transactions
                   </div>
                 </div>
 
@@ -135,22 +131,21 @@ const Landing = () => {
                 <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
                   <div className="Text justify-center items-end gap-2 inline-flex">
                     <div className=" text-center text-white text-6xl md:max-lg:text-5xl font-medium">
-                      9999
+                      300
                     </div>
                     <div className=" text-center text-white text-5xl md:max-lg:text-4xl font-medium">
                       +
                     </div>
                   </div>
                   <div className="Description text-center text-white text-lg font-medium">
-                    Supported Token
+                    Supported Tokens
                   </div>
                 </div>
               </div>
               <div className="SectionTitle text-center text-white text-base font-normal">
-                Envoy Portal provides features that are ready to answer your
-                various digital asset transaction
+                Why make life complicated?
                 <br />
-                needs quickly, safely and completely. Start your trading now!
+                With ENVOY Portal, turning your cash into crypto or vice versa is as easy as making your morning coffee.
               </div>
             </div>
           </div>
@@ -167,12 +162,10 @@ const Landing = () => {
                     <div className="Cardheader grow shrink basis-0 p-4 justify-start items-center flex">
                       <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
                         <div className="Header self-stretch text-white text-3xl font-bold leading-10 tracking-tight">
-                          Accept Feature
+                          Bridge Feature
                         </div>
                         <div className="Subheader self-stretch text-stone-300 text-base font-normal leading-normal tracking-tight">
-                          Ease of mass disbursement for web3 game guilds to
-                          manage thousands of scholar rewards simultaneously
-                          from token to fiat (bank accounts and e-wallets).
+                          Buy/Sell any Crypto Tokens directly using Fiat money (digital payment), as simple as ordering coffee from an app. No Exchange account needed, No complex Charts, No excessive gas fee or Withdraw fee.
                         </div>
                       </div>
                     </div>
@@ -180,7 +173,7 @@ const Landing = () => {
                       <div className="Thumbnail1 w-full md:w-96 h-64 rounded-lg relative">
                         <iframe
                           className="w-full h-full rounded-lg"
-                          src="https://www.youtube.com/embed/L_SF48vjqfU?loop=1&controls=1&playlist=L_SF48vjqfU"
+                          src="https://www.youtube.com/embed/wDvQ8xdltPw?loop=1&controls=1"
                           title="Envoy Portal Bridge feature"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -193,13 +186,13 @@ const Landing = () => {
               </div>
               <div className="Card self-stretch rounded flex-col justify-start items-start flex">
                 <div className="Paper self-stretch rounded flex-col justify-start items-start flex">
-                  <div className="CardElements flex-col md:flex-row self-stretch rounded justify-start items-center gap-10 lg:gap-28 inline-flex">
-                    <div className="hidden Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center md:inline-flex">
+                  <div className="CardElements flex-col-reverse md:flex-row self-stretch rounded justify-start items-center gap-10 lg:gap-28 inline-flex">
+                    <div className="Cardmedia p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center md:inline-flex">
                       <div className="Thumbnail1 w-full md:w-96 h-64 rounded-lg relative">
                         <iframe
                           className="w-full h-full rounded-lg"
-                          src="https://www.youtube.com/embed/L_SF48vjqfU?loop=1&controls=1&playlist=L_SF48vjqfU"
-                          title="Envoy Portal Bridge feature"
+                          src="https://www.youtube.com/embed/8SZUcGlEbe0?loop=1&controls=1"
+                          title="Envoy Portal Accept feature"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                           allowFullScreen
@@ -209,27 +202,11 @@ const Landing = () => {
                     <div className="Cardheader grow shrink basis-0 p-4 justify-start items-center flex">
                       <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
                         <div className="Header self-stretch text-white text-3xl font-bold leading-10 tracking-tight">
-                          Bridge Feature
+                          Accept Feature
                         </div>
                         <div className="Subheader self-stretch text-stone-300 text-base font-normal leading-normal tracking-tight">
-                          An easily facilitate Buy/Sell Web3 digital tokens,
-                          without using any exchange, enable direct fiat payment
-                          like QRIS/e-wallet. No excessive gas-fees, no order
-                          book, no KYC process, with safe and secure
-                          transactions.
+                          Receive Game Rewards or Revenue sharing from Web3 Game Guilds, easing mass disbursements to thousands receiver at once. Receiver can opt to directly receive in fiat money (Bank account/e-wallets).
                         </div>
-                      </div>
-                    </div>
-                    <div className="md:hidden Cardmedia w-full p-2 bg-neutral-200 bg-opacity-10 rounded-2xl border border-white border-opacity-10 flex-col justify-center items-center inline-flex">
-                      <div className="Thumbnail1 w-full md:w-96 rounded-lg relative">
-                        <iframe
-                          className="w-full rounded-lg"
-                          src="https://www.youtube.com/embed/L_SF48vjqfU?loop=1&controls=1&playlist=L_SF48vjqfU"
-                          title="Envoy Portal Bridge feature"
-                          frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowFullScreen
-                        ></iframe>
                       </div>
                     </div>
                   </div>
@@ -254,7 +231,7 @@ const Landing = () => {
                       <div className="hidden md:block Thumbnail1 w-96 rounded-lg relative">
                         <Image
                           alt="Thumbnail"
-                          src="/feature-trade-pc.png"
+                          src="/feature-trade-pc.webp"
                           width={0}
                           height={0}
                           sizes="100vw"
@@ -264,7 +241,7 @@ const Landing = () => {
                       <div className="md:hidden Thumbnail1 w-full rounded-lg relative">
                         <Image
                           alt="Thumbnail"
-                          src="/feature-trade-sp.png"
+                          src="/feature-trade-sp.webp"
                           width={0}
                           height={0}
                           sizes="100vw"
@@ -286,22 +263,22 @@ const Landing = () => {
             <div className="w-full flex-col justify-start items-center gap-20 md:gap-28 inline-flex">
               <div className="Title self-stretch flex-col justify-start items-center gap-7 flex">
                 <div className="SectionTitle self-stretch text-center text-white text-3xl md:text-4xl font-bold tracking-tight">
-                  Simply digital ecosystem for modern
+                  Your Gateway
                   <br />
-                  Digital trades
+                  to access Decentralized Ecosystems
                 </div>
                 <div className="Description self-stretch text-center text-white text-base font-normal">
-                  A perfect solution for maintenance your digital assets easily
+                  ENVOY Portal put you on the captain seat. 
                   <br />
-                  and safely with a modern digital ecosystems
+                  Navigate in-and-out to any Web3 ecosystem with full control, No Deposit/Withdraw, 100% non-custodial.
                 </div>
               </div>
               <div className="Cardmedia flex-col justify-center items-center flex">
                 <div className="LibraryPlaceholderImage bg-black bg-opacity-5 flex-col justify-center items-center flex">
-                  <div className="Image40 w-[20rem] h-[20rem] md:w-[35rem] md:h-[35rem] lg:w-[50rem] lg:h-[50rem] relative">
+                  <div className="Image40 w-[20rem] h-[20rem] md:w-[35rem] md:h-[35rem] relative">
                     <Image
                       alt="Image40"
-                      src="/circle-graphic.png"
+                      src="/circle-graphic.webp"
                       fill={true}
                     />
                   </div>
@@ -321,7 +298,7 @@ const Landing = () => {
             <div className="LibraryPlaceholderImage px-10 lg:px-64 py-8 lg:py-16 bg-zinc-900 rounded-2xl border border-white border-opacity-10 backdrop-blur-xl justify-center items-center flex">
               <div>
                 <Image
-                  src="/partner-indo-dax.png"
+                  src="/partner-indo-dax.webp"
                   alt="partner-indo-dax"
                   width={0}
                   height={0}
@@ -341,69 +318,69 @@ const Landing = () => {
               Our Partners
             </div>
             {/* PC */}
-            <div className="hidden Wrapper flex-col justify-center items-center gap-8 md:flex">
+            <div className="hidden Wrapper flex-col justify-center items-center gap-6 md:flex">
               <div className="CardGroup justify-center items-center gap-6 inline-flex">
                 <PartnerCard
-                  imageSrc="/partner-garuda.png"
+                  imageSrc="/partner-garuda.webp"
                   alt="partner-garuda"
                 />
-                <PartnerCard imageSrc="/partner-wolf.png" alt="partner-wolf" />
+                <PartnerCard imageSrc="/partner-wtw.webp" alt="partner-wtw" />
                 <PartnerCard
-                  imageSrc="/partner-playmining.png"
+                  imageSrc="/partner-playmining.webp"
                   alt="partner-playmining"
                 />
-                <PartnerCard imageSrc="/partner-kmsk.png" alt="partner-kmsk" />
+                <PartnerCard imageSrc="/partner-kmsk.webp" alt="partner-kmsk" />
                 <PartnerCard
-                  imageSrc="/partner-digital-asset.png"
+                  imageSrc="/partner-digital-asset.webp"
                   alt="partner-digital-asset"
                 />
               </div>
               <div className="CardGroup justify-center items-center gap-6 inline-flex">
                 <PartnerCard
-                  imageSrc="/partner-eternal-crypt.png"
+                  imageSrc="/partner-eternal-crypt.webp"
                   alt="partner-eternal-crypt"
                 />
                 <PartnerCard
-                  imageSrc="/partner-sakura-guide-game.png"
-                  alt="partner-sakura-guide-game"
+                  imageSrc="/partner-sakura-guild-game.webp"
+                  alt="partner-sakura-guild-game"
                 />
                 <PartnerCard
-                  imageSrc="/partner-playsia-tv.png"
+                  imageSrc="/partner-playsia-tv.webp"
                   alt="partner-playasia-tv"
                 />
-                <PartnerCard imageSrc="/partner-aca.png" alt="partner-aca" />
+                <PartnerCard imageSrc="/partner-aca.webp" alt="partner-aca" />
               </div>
             </div>
 
             {/* SP */}
             <div className="md:hidden Wrapper grid grid-cols-3 justify-center items-center gap-8">
               <PartnerCard
-                imageSrc="/partner-garuda.png"
+                imageSrc="/partner-garuda.webp"
                 alt="partner-garuda"
               />
-              <PartnerCard imageSrc="/partner-wolf.png" alt="partner-wolf" />
+              <PartnerCard imageSrc="/partner-wtw.webp" alt="partner-wtw" />
               <PartnerCard
-                imageSrc="/partner-playmining.png"
+                imageSrc="/partner-playmining.webp"
                 alt="partner-playmining"
               />
-              <PartnerCard imageSrc="/partner-kmsk.png" alt="partner-kmsk" />
+              <PartnerCard imageSrc="/partner-kmsk.webp" alt="partner-kmsk" />
               <PartnerCard
-                imageSrc="/partner-digital-asset.png"
+                imageSrc="/partner-digital-asset.webp"
                 alt="partner-digital-asset"
               />
               <PartnerCard
-                imageSrc="/partner-eternal-crypt.png"
+                imageSrc="/partner-eternal-crypt.webp"
                 alt="partner-eternal-crypt"
               />
               <PartnerCard
-                imageSrc="/partner-sakura-guide-game.png"
-                alt="partner-sakura-guide-game"
+                imageSrc="/partner-sakura-guild-game.webp"
+                alt="partner-sakura-guild-game"
               />
               <PartnerCard
-                imageSrc="/partner-playsia-tv.png"
+                imageSrc="/partner-playsia-tv.webp"
                 alt="partner-playasia-tv"
               />
-              <PartnerCard imageSrc="/partner-aca.png" alt="partner-aca" />
+              <PartnerCard imageSrc="/partner-aca.webp" alt="partner-aca" />
             </div>
           </div>
         </div>
@@ -427,35 +404,29 @@ const Landing = () => {
               </div>
               <div className="Cardgroup grid grid-cols-1 md:grid-cols-3 gap-6">
                 <NewsCard
-                  imageSrc="/news-x-eternal-crypt.png"
-                  alt="news-x-eternal-crypt"
-                  title={`"Eternal Crypt - Wizardry BC -" signs partnership with
-                  Southeast Asia game guild "Garuda Guild Games"`}
-                  description={`GGG "Envoy Portal", the pioneer of the Web3 payment
-                  solution.`}
-                  date="September 2023"
+                  imageSrc="/news-x-sgg.webp"
+                  alt="news-x-sgg"
+                  title={`"Sakura Guild Games - SUP" signed partnership with ENVOY Portal`}
+                  description={`SGG enter the integrated ecosystem of ENVOY by providing GMS and ENVOY Portal access to thousands of scholars.`}
+                  date="August 2023"
                   newsSource="prtimes.jp"
                 />
 
                 <NewsCard
-                  imageSrc="/news-x-playmining.png"
+                  imageSrc="/news-x-playmining.webp"
                   alt="news-x-playmining"
-                  title={`"Eternal Crypt - Wizardry BC -" signs partnership with
-                  Southeast Asia game guild "Garuda Guild Games"`}
-                  description={`GGG "Envoy Portal", the pioneer of the Web3 payment
-                  solution.`}
+                  title={`ENVOY Portal is supporting PlayMining Games to use GMS and Accept Feature to Disburse scholars earnings`}
+                  description={`JobTribes and Cooking Burger is natively supported on ENVOY's GMS and Accept Feature.`}
                   date="September 2023"
                   newsSource="prtimes.jp"
                 />
 
                 <NewsCard
-                  imageSrc="/news-playsia-tv.png"
+                  imageSrc="/news-playsia-tv.webp"
                   alt="news-playsia-tv"
-                  title={`"Eternal Crypt - Wizardry BC -" signs partnership with
-                  Southeast Asia game guild "Garuda Guild Games"`}
-                  description={`GGG "Envoy Portal", the pioneer of the Web3 payment
-                  solution.`}
-                  date="September 2023"
+                  title={`ENVOY Portal signed exclusive partnership with PlaysiaTV`}
+                  description={`PlaysiaTV (a project from ACAFP) is exclusively partnering with ENVOY Portal to provide best crypto UX to its users`}
+                  date="October 2023"
                   newsSource="prtimes.jp"
                 />
               </div>
