@@ -1,0 +1,9 @@
+.swiper {
+  :global .swiper-pagination-bullet {
+    background-color: rgb(64, 64, 64);
+  }
+
+  :global .swiper-pagination-bullet-active {
+    background-color: white;
+  }
+}
