@@ -5,6 +5,7 @@ type Props = {
   imageSrc: string
   alt: string
   title: string
+  href?: string
   description: string
   date: string
   newsSource: string
@@ -13,6 +14,7 @@ const NewsCard: React.FC<Props> = ({
   imageSrc,
   alt,
   title,
+  href = "#",
   description,
   date,
   newsSource,
@@ -39,7 +41,7 @@ const NewsCard: React.FC<Props> = ({
       </div>
       <div className="Cardheader py-4 justify-center items-start flex">
         <div className="Content grow shrink basis-0 flex-col justify-start items-start gap-2 flex">
-          <Link href="#" className="hover:underline">
+          <Link href={href} className="hover:underline">
             <div className="EternalCryptWizardryBcSignsPartnershipWithSoutheastAsiaGameGuildGarudaGuildGames text-white text-base font-bold leading-normal tracking-tight">
               {title}
             </div>
