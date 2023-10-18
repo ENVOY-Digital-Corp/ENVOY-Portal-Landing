@@ -11,8 +11,8 @@ import NewsHighlightCard from "@/components/Cards/NewsHighlightCard"
 const Blog = () => {
   return (
     <div className="Blog container">
-      <div className="Title flex-col justify-start items-start gap-1.5 flex">
-        <div className="LatestNewsOnEnvoyPortal self-stretch text-neutral-50 text-6xl font-semibold">
+      <div className="Title flex-col justify-start items-start gap-1.5 flex pt-8">
+        <div className="LatestNewsOnEnvoyPortal self-stretch text-neutral-50 text-5xl md:text-6xl font-semibold">
           Latest news
           <br />
           on Envoy Portal
@@ -25,9 +25,9 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="justify-center items-center flex">
+      <div className="justify-center items-center flex pt-8 mt-4">
         <div className="Wrapper self-stretch flex-col justify-start items-start gap-8 md:gap-16 flex">
-          <div className="Cardgroup grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="Cardgroup grid grid-cols-1 sm:grid-cols-3 gap-6">
             <NewsCard
               imageSrc="/news-x-sgg.webp"
               alt="news-x-sgg"
@@ -58,8 +58,8 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="HiglightSection grid md:grid-cols-3 gap-8">
-        <div className="col-span-2 justify-start items-start gap-8 flex">
+      <div className="HiglightSection grid md:grid-cols-3 gap-8 pt-8 mt-12">
+        <div className="md:col-span-2 justify-start items-start gap-8 flex">
           <div className="CardGroup grow shrink basis-0 flex-col justify-start items-start gap-8 flex">
             <HorizontalNewsCard
               title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
@@ -110,12 +110,12 @@ const Blog = () => {
               newsSource="prtimes.jp"
             />
           </div>
-          <div className="DividerVertical h-96 opacity-20 border border-white flex-col justify-start items-start flex">
+          <div className="hidden DividerVertical h-96 opacity-20 border border-white flex-col justify-start items-start md:flex">
             <div className="MinWidth w-px h-px relative" />
           </div>
         </div>
 
-        <div className="Higlights flex-col justify-start items-end gap-10 flex">
+        <div className="hidden Higlights flex-col justify-start items-end gap-10 md:flex">
           <div className="Title flex-col justify-start items-start flex">
             <h2 className="Highlights text-white text-3xl font-semibold underline">
               Highlights
