@@ -1,11 +1,11 @@
 /* eslint-disable quotes */
-import HorizontalNewsCard from "../Cards/HorizontalNewsCard"
-import NewsHighlightCard from "../Cards/NewsHighlightCard"
+import HorizontalNewsCard from "../common/cards/HorizontalNewsCard"
+import NewsHighlightCard from "../common/cards/NewsHighlightCard"
 
 type Props = {}
 const BlogHighlightSection: React.FC<Props> = ({}) => {
   return (
-    <div className="HiglightSection flex flex-col-reverse justify-end md:grid md:grid-cols-3 gap-8 pt-8 mt-12">
+    <section className="flex flex-col-reverse justify-end md:grid md:grid-cols-3 gap-8 pt-8 mt-12">
       <div className="md:col-span-2 justify-start items-start gap-8 flex">
         <div className="CardGroup grow shrink basis-0 flex-col justify-start items-start gap-8 flex">
           <HorizontalNewsCard
@@ -86,7 +86,7 @@ const BlogHighlightSection: React.FC<Props> = ({}) => {
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
