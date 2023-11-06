@@ -1,16 +1,7 @@
 import React from "react"
-import { BaseLayoutProps, PageLayoutProps } from "./types"
-import Navigation from "@/components/Landing/Navigation"
-import Footer from "@/components/Landing/Footer"
+import Header from "@/components/common/layouts/Header"
+import Footer from "@/components/common/layouts/Footer"
 import Head from "next/head"
-
-export const BaseLayout: React.FC<BaseLayoutProps> = ({ children }) => {
-  return <div>{children}</div>
-}
-
-export const getBaseLayout = (page: React.ReactNode) => {
-  return <BaseLayout>{page}</BaseLayout>
-}
 
 const defaults = {
   title: "ENVOY Portal",
@@ -20,10 +11,11 @@ const defaults = {
   url: "https://twitter.com/envoycorp",
 }
 
-export const PageLayout: React.FC<PageLayoutProps> = ({
-  children,
-  ...props
-}) => {
+export type PageLayoutProps = {
+  children: React.ReactNode
+}
+
+const PageLayout: React.FC<PageLayoutProps> = ({ children, ...props }) => {
   return (
     <div className="bg-stone-950 text-white font-['Euclid_Circular_B']">
       <Head>
@@ -50,9 +42,11 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
         <meta name="twitter:image" content={defaults.image} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Navigation />
+      <Header />
       {children}
       <Footer />
     </div>
   )
 }
+
+export default PageLayout
