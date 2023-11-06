@@ -1,4 +1,4 @@
-import Category from "../Cards/Category"
+import Category from "../common/cards/Category"
 
 type Props = {
   title: string

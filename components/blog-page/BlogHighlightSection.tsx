@@ -1,6 +1,6 @@
 /* eslint-disable quotes */
-import HorizontalNewsCard from "../Cards/HorizontalNewsCard"
-import NewsHighlightCard from "../Cards/NewsHighlightCard"
+import HorizontalNewsCard from "../common/cards/HorizontalNewsCard"
+import NewsHighlightCard from "../common/cards/NewsHighlightCard"
 
 type Props = {}
 const BlogHighlightSection: React.FC<Props> = ({}) => {

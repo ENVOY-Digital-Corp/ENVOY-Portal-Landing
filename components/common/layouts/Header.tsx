@@ -11,7 +11,7 @@ import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward"
 import Image from "next/image"
 import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos"
 
-const Navigation = () => {
+const Header = () => {
   const [toggle, setToggle] = useState(false)
   const [follow, setFollow] = useState<null | HTMLElement>(null)
 
@@ -194,4 +194,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation
+export default Header
