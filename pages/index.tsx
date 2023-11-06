@@ -9,11 +9,13 @@ import NewsCard from "@/components/Cards/NewsCard"
 const Landing = () => {
   return (
     <div className="LandingPage">
-      <div className="HeroSection relative pt-20">
-        <div className="Bg w-full h-full left-0 top-0 absolute">
-          <div className="Ellipse1 w-full h-full left-0 top-0 absolute opacity-20 bg-cyan-900 rounded-full blur-3xl" />
-          <div className="MaskGroup w-full h-full left-0 bottom-0 absolute">
-            <div className="Aset22 w-[15rem] h-[20rem] md:w-[35rem] md:h-96 lg:w-[50rem] lg:h-96 left-0 bottom-0 absolute opacity-60">
+      {/* Introduction section */}
+      <div className="relative pt-20">
+        {/* graphic */}
+        <div className="w-full h-full left-0 top-0 absolute">
+          <div className="w-full h-full left-0 top-0 absolute opacity-20 bg-cyan-900 rounded-full blur-3xl" />
+          <div className="w-full h-full left-0 bottom-0 absolute">
+            <div className="w-[15rem] h-[20rem] md:w-[35rem] md:h-96 lg:w-[50rem] lg:h-96 left-0 bottom-0 absolute opacity-60">
               <Image src="/graphic1.webp" alt="Aset22" fill={true} />
             </div>
           </div>
@@ -21,61 +23,61 @@ const Landing = () => {
 
         <div className="container relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-4">
-            <div className="Text flex-col justify-center items-center md:items-start gap-8 inline-flex">
-              <div className="Text flex-col justify-center items-center gap-6 flex text-center md:text-start">
-                <div className="CompleteGatewayForDigitalAssetNeeds text-neutral-50 text-4xl md:text-5xl font-bold self-stretch">
+            <div className="flex-col justify-center items-center md:items-start gap-8 inline-flex">
+              <div className="flex-col justify-center items-center gap-6 flex text-center md:text-start">
+                <div className="text-neutral-50 text-4xl md:text-5xl font-bold self-stretch">
                   The Ultimate
                   <br />
                   Non-Custodial
                   <br />
                   Crypto Gateway!
                 </div>
-                <div className="TheSimpleWayToTransactionsAndTradesWithManyDigitalCurrenciesInSinglePlatform self-stretch text-neutral-50 text-base font-normal leading-normal tracking-tight">
-                  One stop solutions to Buy/Sell Crypto Tokens with fiat money and digital payment, easier than ordering food online.
+                <div className="self-stretch text-neutral-50 text-base font-normal leading-normal tracking-tight">
+                  One stop solutions to Buy/Sell Crypto Tokens with fiat money
+                  and digital payment, easier than ordering food online.
                 </div>
               </div>
+
               <Link
                 href="https://app.envoyportal.com"
-                className="Button px-5 py-2 bg-neutral-200 bg-opacity-20 rounded-full backdrop-blur-xl flex-col justify-center items-center flex"
+                className="px-5 py-2 bg-neutral-200 bg-opacity-20 rounded-full backdrop-blur-xl flex-col justify-center items-center flex"
               >
-                <div className="Base justify-center items-center gap-2 inline-flex">
-                  <div className="Button text-white text-base font-normal leading-normal tracking-tight">
+                <div className="justify-center items-center gap-2 inline-flex">
+                  <div className="text-white text-base font-normal leading-normal tracking-tight">
                     Launch App
                   </div>
-                  <div className="MaskedIcon flex-col justify-center items-center inline-flex">
-                    <ArrowForwardIos className="IconRight relative flex-col justify-start items-start flex text-sm" />
+                  <div className="flex-col justify-center items-center inline-flex">
+                    <ArrowForwardIos className="relative flex-col justify-start items-start flex text-sm" />
                   </div>
                 </div>
               </Link>
             </div>
-            <div className="Cardmedia">
-              <div className="LibraryPlaceholderImage w-full bg-black bg-opacity-5 justify-center items-center inline-flex">
-                <Image
-                  className="Image39"
-                  src="/graphic2.webp"
-                  alt="Image39"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </div>
+
+            <div className="w-full bg-black bg-opacity-5 justify-center items-center inline-flex">
+              <Image
+                src="/graphic2.webp"
+                alt="envoy-portal-intro"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
             </div>
           </div>
           <div className="flex justify-center mt-12 md:mt-32">
             <div>
-              <div className="Button w-30 h-7 px-1 py-1 opacity-60 rounded flex-col justify-center items-center inline-flex">
+              <div className="w-30 h-7 px-1 py-1 opacity-60 rounded flex-col justify-center items-center inline-flex">
                 <ScrollLink
                   to="transactions"
                   smooth={true}
                   className="cursor-pointer"
                 >
-                  <div className="Base justify-center items-center gap-2 inline-flex">
-                    <div className="Button text-neutral-50 text-xs font-medium uppercase leading-snug tracking-wide">
+                  <div className="justify-center items-center gap-2 inline-flex">
+                    <div className="text-neutral-50 text-xs font-medium uppercase leading-snug tracking-wide">
                       Learn More
                     </div>
-                    <div className="MaskedIcon h-4 flex-col justify-center items-center inline-flex">
-                      <ArrowForwardIos className="IconsansBoldArrowDown2 w-4 h-4 relative flex-col justify-start items-start flex rotate-90" />
+                    <div className="h-4 flex-col justify-center items-center inline-flex">
+                      <ArrowForwardIos className="w-4 h-4 relative flex-col justify-start items-start flex rotate-90" />
                     </div>
                   </div>
                 </ScrollLink>
@@ -86,66 +88,67 @@ const Landing = () => {
       </div>
 
       <Element name="transactions">
-        <div className="Frame48095568 mt-24 pt-8">
+        <div className="mt-24 pt-8">
           <div className="container">
             <div className="flex-col w-full justify-start items-center gap-16 inline-flex">
-              <div className="SectionTitle text-center text-neutral-50 text-3xl md:text-4xl font-bold tracking-tight">
-                No complex steps, No confusing charts{" "}
-                <br />
+              <h2 className="text-center text-neutral-50 text-3xl md:text-4xl font-bold tracking-tight">
+                No complex steps, No confusing charts <br />
                 Enter amount, Sign, get that cash!
-              </div>
-              <div className="Frame48095567 flex flex-col justify-start items-center gap-6 md:gap-12 md:inline-flex md:flex-row">
-                <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
-                  <div className="Text justify-center items-end gap-2 inline-flex">
-                    <div className="999 text-center text-white text-6xl md:max-lg:text-5xl font-medium">
+              </h2>
+
+              <div className="flex flex-col justify-start items-center gap-6 md:gap-12 md:inline-flex md:flex-row">
+                <div className="flex-col justify-start items-center gap-4 inline-flex">
+                  <div className="justify-center items-end gap-2 inline-flex">
+                    <p className="text-center text-white text-6xl md:max-lg:text-5xl font-medium">
                       4,500
-                    </div>
-                    <div className=" text-center text-white text-5xl md:max-lg:text-4xl font-medium">
+                    </p>
+                    <p className="text-center text-white text-5xl md:max-lg:text-4xl font-medium">
                       +
-                    </div>
+                    </p>
                   </div>
-                  <div className="Description text-center text-white text-lg font-medium">
+                  <p className="text-center text-white text-lg font-medium">
                     Active users, and growing!
-                  </div>
+                  </p>
                 </div>
 
-                <div className="DividerVertical w-full h-auto md:w-auto md:h-28 opacity-40 bg-white flex-col justify-start items-start inline-flex">
-                  <div className="MinWidth w-px h-px relative" />
+                <div className="w-full h-auto md:w-auto md:h-28 opacity-40 bg-white flex-col justify-start items-start inline-flex">
+                  <div className="w-px h-px relative" />
                 </div>
 
-                <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
-                  <div className="Text justify-center items-end gap-2 inline-flex">
-                    <div className="999999 text-center text-white text-6xl md:max-lg:text-5xl font-medium">
+                <div className="flex-col justify-start items-center gap-4 inline-flex">
+                  <div className="justify-center items-end gap-2 inline-flex">
+                    <div className="text-center text-white text-6xl md:max-lg:text-5xl font-medium">
                       31,654
                     </div>
                   </div>
-                  <div className="Description text-center text-white text-lg font-medium">
+                  <div className="text-center text-white text-lg font-medium">
                     Transactions
                   </div>
                 </div>
 
-                <div className="DividerVertical w-full h-auto md:w-auto md:h-28 opacity-40 bg-white flex-col justify-start items-start inline-flex">
-                  <div className="MinWidth w-px h-px relative" />
+                <div className="w-full h-auto md:w-auto md:h-28 opacity-40 bg-white flex-col justify-start items-start inline-flex">
+                  <div className="w-px h-px relative" />
                 </div>
 
-                <div className="Wrapper flex-col justify-start items-center gap-4 inline-flex">
-                  <div className="Text justify-center items-end gap-2 inline-flex">
-                    <div className=" text-center text-white text-6xl md:max-lg:text-5xl font-medium">
+                <div className="flex-col justify-start items-center gap-4 inline-flex">
+                  <div className="justify-center items-end gap-2 inline-flex">
+                    <div className="text-center text-white text-6xl md:max-lg:text-5xl font-medium">
                       300
                     </div>
-                    <div className=" text-center text-white text-5xl md:max-lg:text-4xl font-medium">
+                    <div className="text-center text-white text-5xl md:max-lg:text-4xl font-medium">
                       +
                     </div>
                   </div>
-                  <div className="Description text-center text-white text-lg font-medium">
+                  <div className="text-center text-white text-lg font-medium">
                     Supported Tokens
                   </div>
                 </div>
               </div>
-              <div className="SectionTitle text-center text-white text-base font-normal">
+              <div className="text-center text-white text-base font-normal">
                 Why make life complicated?
                 <br />
-                With ENVOY Portal, turning your cash into crypto or vice versa is as easy as making your morning coffee.
+                With ENVOY Portal, turning your cash into crypto or vice versa
+                is as easy as making your morning coffee.
               </div>
             </div>
           </div>
@@ -165,7 +168,10 @@ const Landing = () => {
                           Bridge Feature
                         </div>
                         <div className="Subheader self-stretch text-stone-300 text-base font-normal leading-normal tracking-tight">
-                          Buy/Sell any Crypto Tokens directly using Fiat money (digital payment), as simple as ordering coffee from an app. No Exchange account needed, No complex Charts, No excessive gas fee or Withdraw fee.
+                          Buy/Sell any Crypto Tokens directly using Fiat money
+                          (digital payment), as simple as ordering coffee from
+                          an app. No Exchange account needed, No complex Charts,
+                          No excessive gas fee or Withdraw fee.
                         </div>
                       </div>
                     </div>
@@ -205,7 +211,10 @@ const Landing = () => {
                           Accept Feature
                         </div>
                         <div className="Subheader self-stretch text-stone-300 text-base font-normal leading-normal tracking-tight">
-                          Receive Game Rewards or Revenue sharing from Web3 Game Guilds, easing mass disbursements to thousands receiver at once. Receiver can opt to directly receive in fiat money (Bank account/e-wallets).
+                          Receive Game Rewards or Revenue sharing from Web3 Game
+                          Guilds, easing mass disbursements to thousands
+                          receiver at once. Receiver can opt to directly receive
+                          in fiat money (Bank account/e-wallets).
                         </div>
                       </div>
                     </div>
@@ -268,9 +277,10 @@ const Landing = () => {
                   to access Decentralized Ecosystems
                 </div>
                 <div className="Description self-stretch text-center text-white text-base font-normal">
-                  ENVOY Portal put you on the captain seat. 
+                  ENVOY Portal put you on the captain seat.
                   <br />
-                  Navigate in-and-out to any Web3 ecosystem with full control, No Deposit/Withdraw, 100% non-custodial.
+                  Navigate in-and-out to any Web3 ecosystem with full control,
+                  No Deposit/Withdraw, 100% non-custodial.
                 </div>
               </div>
               <div className="Cardmedia flex-col justify-center items-center flex">
