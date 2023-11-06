@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <Fragment>
-      <nav className="h-[70px]">
+      <header className="h-[70px]">
         <div
           className={`navbar-backdrop fixed ${
             !toggle && "hidden"
@@ -189,7 +189,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </header>
     </Fragment>
   )
 }
