@@ -20,10 +20,7 @@ const Blog = () => {
           on Envoy Portal
         </div>
         <div className="SectionTitle self-stretch opacity-80 text-white text-lg font-normal">
-          Envoy Portal provides features that are ready to answer your various
-          digital
-          <br />
-          asset transaction needs quickly, safely and completely .
+          We are committed to bring progresses to ENVOY Portal ecosystem!
         </div>
       </div>
 
