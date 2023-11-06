@@ -1,3 +1,4 @@
+import { Button } from "@mui/material"
 import Image from "next/image"
 import Link from "next/link"
 import { Element, Link as ScrollLink } from "react-scroll"
@@ -34,20 +35,18 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="Actions flex justify-end items-start gap-4">
-                  <div className="Form max-md:w-full self-stretch justify-between md:justify-start items-start gap-4 inline-flex">
+                  <div className="Form max-md:w-full self-stretch justify-end md:justify-start items-start gap-4 inline-flex">
                     <div className="Textfield">
                       <input
                         className="Input h-10 px-6 md:h-12 md:px-6 rounded-full border border-white focus:outline-none text-white placeholder:text-white text-sm md:text-base font-normal bg-transparent"
                         placeholder="Enter your email"
                       />
                     </div>
-                    <div className="Button bg-sky-500 rounded-3xl flex-col justify-center items-center inline-flex">
-                      <div className="Base justify-center items-center gap-2 inline-flex">
-                        <button className="Button h-10 px-3 md:h-12 md:px-6 text-white text-sm md:text-base font-medium uppercase leading-relaxed tracking-wide bg-transparent">
-                          Sign Up
-                        </button>
-                      </div>
-                    </div>
+                    <Button className="Button  bg-sky-500 rounded-3xl flex-col justify-center items-center inline-flex px-3 md:h-12 md:px-6">
+                      <p className="Button text-white text-sm lg:text-base font-medium uppercase leading-relaxed tracking-wide">
+                        Sign Up
+                      </p>
+                    </Button>
                   </div>
                 </div>
               </div>

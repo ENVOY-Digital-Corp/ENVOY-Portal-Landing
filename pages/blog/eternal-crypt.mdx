@@ -1,0 +1,41 @@
+import BlogHeader from "@/components/Blog/BlogHeader"
+import BlogHighlightSection from "@/components/Blog/BlogHighlightSection"
+
+export const meta = {
+  title: `Eternal Crypt - Wizardry BC - signs partnership with Southeast Asia game guild 
+" Garuda Guild Games "`,
+}
+
+<img
+  src="/blog-eternal-crypt.png"
+  alt="Eternal Crypt - Wizardry BC - signs partnership with Southeast Asia game guild game"
+/>
+
+<br />
+Eternal Crypt - Wizardry BC -'' is a blockchain game being developed jointly with
+Thuringham Co., Ltd. (Headquarters: Minato-ku, Tokyo, Representative Director: Hiroki
+Tahara, hereinafter referred to as `Thuringham'') using the `Wizardry'' IP. has entered
+into a partnership with the Southeast Asian gaming guild "Garuda Guild Games."
+
+<br />
+
+Southeast Asia, centered on Indonesia, is a hotspot where there are many blockchain gamers. With marketing support from Garuda Guild Games, which includes many scholars, we will further expand the community by actively promoting the game and tokenomics of Eternal Crypt - Wizardry BC - to users who are highly interested in blockchain games. We will continue to promote this.
+
+<br />
+
+What is Garuda Guild Games?
+Garuda Guild Games (GGG) is a gaming guild that accommodates a diverse range of gamers from around the world. Although it is a new guild established at the end of 2021, it has become one of the fastest growing and popular gaming guilds in Indonesia. Specializing in Web3/blockchain/NFT gaming, GGG helps connect talented gamers with asset owners and sponsors in scholarship programs.
+GGG has grown by leaps and bounds by focusing on Web3/NFT games, the fastest growing industry in the gaming industry, and recognizing players as the fulcrum of its business model. Additionally, we have an industry-leading founding team with experience in technology, TradFi, gaming, and web design/marketing with a focus on community building. We are serious about improving the skills of our players and have a support system in place to help them perform at their best in all games GGG is involved with.
+
+export default ({ children }) => (
+  <div className="container mt-8">
+    <BlogHeader
+      title={`Eternal Crypt - Wizardry BC - signs partnership with Southeast Asia game guild 
+" Garuda Guild Games "`}
+      date={"Oct 21, 2023"}
+      categories={["Category 1", "Category 2", "Category 3"]}
+    />
+    <article className="mt-8">{children}</article>
+    <BlogHighlightSection />
+  </div>
+)
