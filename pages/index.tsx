@@ -27,7 +27,7 @@ const Landing = () => {
           <div className="container relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-4">
               <div className="flex-col justify-center items-center md:items-start gap-8 inline-flex">
-                <div className="flex-col justify-center items-center gap-6 flex text-center md:text-start">
+                <article className="flex-col justify-center items-center gap-6 flex text-center md:text-start">
                   <h2 className="text-neutral-50 text-4xl md:text-5xl font-bold self-stretch">
                     The Ultimate
                     <br />
@@ -39,7 +39,7 @@ const Landing = () => {
                     One stop solutions to Buy/Sell Crypto Tokens with fiat money
                     and digital payment, easier than ordering food online.
                   </p>
-                </div>
+                </article>
 
                 <Link
                   href="https://app.envoyportal.com"
@@ -94,7 +94,7 @@ const Landing = () => {
       <Element name="transactions">
         <div className="mt-24 pt-8">
           <div className="container">
-            <div className="flex-col w-full justify-start items-center gap-16 inline-flex">
+            <article className="flex-col w-full justify-start items-center gap-16 inline-flex">
               <h2 className="text-center text-neutral-50 text-3xl md:text-4xl font-bold tracking-tight">
                 No complex steps, No confusing charts <br />
                 Enter amount, Sign, get that cash!
@@ -154,13 +154,13 @@ const Landing = () => {
                 With ENVOY Portal, turning your cash into crypto or vice versa
                 is as easy as making your morning coffee.
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </Element>
 
       <Element name="features">
-        <div className="mt-10 md:mt-40 pt-8">
+        <article className="mt-10 md:mt-40 pt-8">
           <div className="container">
             <div className="flex-col justify-start items-end gap-10 md:gap-20 inline-flex text-center md:text-start">
               <div className="self-stretch rounded flex-col justify-start items-start flex">
@@ -269,11 +269,11 @@ const Landing = () => {
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </Element>
 
       <Element name="about">
-        <div className="mt-14 md:mt-32 pt-8">
+        <article className="mt-14 md:mt-32 pt-8">
           <div className="container">
             <div className="w-full flex-col justify-start items-center gap-20 md:gap-28 inline-flex">
               <div className="self-stretch flex-col justify-start items-center gap-7 flex">
@@ -302,7 +302,7 @@ const Landing = () => {
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </Element>
 
       <Element name="exchange-partner">
@@ -413,7 +413,7 @@ const Landing = () => {
         <div className="mt-16 md:mt-40">
           <div className="container">
             <div className="justify-center items-center flex">
-              <div className="w-full self-stretch flex-col justify-start items-start gap-8 md:gap-16 flex">
+              <article className="w-full self-stretch flex-col justify-start items-start gap-8 md:gap-16 flex">
                 <div className="w-full justify-between items-center inline-flex">
                   <h2 className="text-white text-3xl md:text-4xl font-bold">
                     Browse our latest news
@@ -511,7 +511,7 @@ const Landing = () => {
                     </Button>
                   </Link>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
