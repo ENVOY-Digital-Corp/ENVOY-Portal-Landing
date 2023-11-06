@@ -9,7 +9,7 @@ const BlogHeader: React.FC<Props> = ({ title, date, categories }) => {
   return (
     <div className="Cardheader flex-col justify-center items-start gap-8 flex">
       <div className="Content self-stretch flex-col justify-start items-start flex">
-        <div className="EternalCryptWizardryBcSignsPartnershipWithSoutheastAsiaGameGuildGarudaGuildGames self-stretch text-neutral-50 text-5xl font-semibold font-['Euclid Circular B']">
+        <div className="EternalCryptWizardryBcSignsPartnershipWithSoutheastAsiaGameGuildGarudaGuildGames self-stretch text-neutral-50 text-2xl md:text-5xl font-semibold font-['Euclid Circular B']">
           {title}
         </div>
       </div>
