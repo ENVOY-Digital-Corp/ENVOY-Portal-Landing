@@ -154,7 +154,7 @@ const Navigation = () => {
                   </div>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="/blog">
                     <Button
                       variant="text"
                       className="text-white normal-case max-md:justify-start"

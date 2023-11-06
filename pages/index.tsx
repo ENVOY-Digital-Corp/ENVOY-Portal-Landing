@@ -5,6 +5,9 @@ import Link from "next/link"
 import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos"
 import PartnerCard from "@/components/Cards/PartnerCard"
 import NewsCard from "@/components/Cards/NewsCard"
+import SectionSlider from "@/components/Landing/Section/SectionSlider"
+import { SwiperSlide } from "swiper/react"
+import { Button } from "@mui/material"
 
 const Landing = () => {
   return (
@@ -32,7 +35,7 @@ const Landing = () => {
                   <br />
                   Crypto Gateway!
                 </div>
-                <div className="self-stretch text-neutral-50 text-base font-normal leading-normal tracking-tight">
+                <div className="TheSimpleWayToTransactionsAndTradesWithManyDigitalCurrenciesInSinglePlatform self-stretch text-neutral-50 text-base font-normal leading-normal tracking-tight">
                   One stop solutions to Buy/Sell Crypto Tokens with fiat money
                   and digital payment, easier than ordering food online.
                 </div>
@@ -91,7 +94,7 @@ const Landing = () => {
         <div className="mt-24 pt-8">
           <div className="container">
             <div className="flex-col w-full justify-start items-center gap-16 inline-flex">
-              <h2 className="text-center text-neutral-50 text-3xl md:text-4xl font-bold tracking-tight">
+              <h2 className="SectionTitle text-center text-neutral-50 text-3xl md:text-4xl font-bold tracking-tight">
                 No complex steps, No confusing charts <br />
                 Enter amount, Sign, get that cash!
               </h2>
@@ -305,8 +308,8 @@ const Landing = () => {
             <div className="text-white text-3xl md:text-4xl font-bold text-center">
               Exchange Partners
             </div>
-            <div className="LibraryPlaceholderImage px-10 lg:px-64 py-8 lg:py-16 bg-zinc-900 rounded-2xl border border-white border-opacity-10 backdrop-blur-xl justify-center items-center flex">
-              <div>
+            <div className="LibraryPlaceholderImage px-10 sm:px-32 md:px-48 lg:px-64 py-8 lg:py-16 bg-zinc-900 rounded-2xl border border-white border-opacity-10 backdrop-blur-xl justify-center items-center flex">
+              <div className="w-full">
                 <Image
                   src="/partner-indo-dax.webp"
                   alt="partner-indo-dax"
@@ -398,21 +401,22 @@ const Landing = () => {
 
       <div className="News mt-16 md:mt-40">
         <div className="container">
-          <div className="justify-center items-center inline-flex">
-            <div className="Wrapper self-stretch flex-col justify-start items-start gap-8 md:gap-16 inline-flex">
+          <div className="justify-center items-center flex">
+            <div className="Wrapper w-full self-stretch flex-col justify-start items-start gap-8 md:gap-16 flex">
               <div className="Title w-full justify-between items-center inline-flex">
                 <div className="Title text-white text-3xl md:text-4xl font-bold">
                   Browse our latest news
                 </div>
-                <div className="hidden Button px-8 py-2 bg-sky-500 rounded-3xl shadow flex-col justify-center items-center md:inline-flex">
-                  <div className="Base justify-center items-center gap-2 inline-flex">
-                    <div className="Button text-white text-base font-medium uppercase leading-relaxed tracking-wide">
+                <Link href="/blog">
+                  <Button className="hidden Button px-8 py-2 bg-sky-500 rounded-3xl shadow flex-col justify-center items-center md:inline-flex">
+                    <p className="Button text-white text-base font-medium uppercase leading-relaxed tracking-wide">
                       See All
-                    </div>
-                  </div>
-                </div>
+                    </p>
+                  </Button>
+                </Link>
               </div>
-              <div className="Cardgroup grid grid-cols-1 md:grid-cols-3 gap-6">
+
+              <div className="hidden Cardgroup sm:grid sm:grid-cols-3 gap-6">
                 <NewsCard
                   imageSrc="/news-x-sgg.webp"
                   alt="news-x-sgg"
@@ -440,14 +444,61 @@ const Landing = () => {
                   newsSource="prtimes.jp"
                 />
               </div>
-              <div className="flex w-full justify-center">
-                <div className="md:hidden Button px-8 py-2 bg-sky-500 rounded-3xl shadow flex-col justify-center items-center inline-flex">
-                  <div className="Base justify-center items-center gap-2 inline-flex">
-                    <div className="Button text-white text-base font-medium uppercase leading-relaxed tracking-wide">
-                      See All
+
+              <div className="w-full justify-center items-center flex sm:hidden">
+                <SectionSlider>
+                  <SwiperSlide>
+                    <div className="flex flex-col gap-4">
+                      <NewsCard
+                        imageSrc="/news-x-sgg.webp"
+                        alt="news-x-sgg"
+                        title={`"Sakura Guild Games - SUP" signed partnership with ENVOY Portal`}
+                        description={`SGG enter the integrated ecosystem of ENVOY by providing GMS and ENVOY Portal access to thousands of scholars.`}
+                        date="August 2023"
+                        newsSource="prtimes.jp"
+                      />
+                      <div className="h-4"></div>
                     </div>
-                  </div>
-                </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="flex flex-col gap-4">
+                      <NewsCard
+                        imageSrc="/news-x-playmining.webp"
+                        alt="news-x-playmining"
+                        title={`ENVOY Portal is supporting PlayMining Games to use GMS and Accept Feature to Disburse scholars earnings`}
+                        description={`JobTribes and Cooking Burger is natively supported on ENVOY's GMS and Accept Feature.`}
+                        date="September 2023"
+                        newsSource="prtimes.jp"
+                      />
+                      <div className="h-4"></div>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="flex flex-col gap-4">
+                      <NewsCard
+                        imageSrc="/news-playsia-tv.webp"
+                        alt="news-playsia-tv"
+                        title={`ENVOY Portal signed exclusive partnership with PlaysiaTV`}
+                        description={`PlaysiaTV (a project from ACAFP) is exclusively partnering with ENVOY Portal to provide best crypto UX to its users`}
+                        date="October 2023"
+                        newsSource="prtimes.jp"
+                      />
+                      <div className="h-4"></div>
+                    </div>
+                  </SwiperSlide>
+                </SectionSlider>
+              </div>
+
+              <div className="flex md:hidden w-full justify-center">
+                <Link href="/blog">
+                  <Button className="Button px-8 py-2 bg-sky-500 rounded-3xl shadow flex-col justify-center items-center inline-flex">
+                    <p className="Button text-white text-base font-medium uppercase leading-relaxed tracking-wide">
+                      See All
+                    </p>
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
