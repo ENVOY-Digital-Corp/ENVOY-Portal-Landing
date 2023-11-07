@@ -4,3 +4,4 @@ export const passwordValidationRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=
 export const numberValidationRegex = /^([0-9]\d*)$/
 export const youtubeIdRegex = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
 export const phoneNumberValidationRegex = /^(^\+62|62|^08)(\d{2,3}-?){2}\d{4,5}$/g
+export const MONTH_YEAR_FORMAT = "LLLL yyyy"

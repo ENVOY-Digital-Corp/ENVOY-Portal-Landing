@@ -9,6 +9,7 @@ type Props = {
   description: string
   date: string
   newsSource: string
+  href?: string
 }
 const HorizontalNewsCard: React.FC<Props> = ({
   imageSrc = "/circle-graphic.webp",
@@ -17,6 +18,7 @@ const HorizontalNewsCard: React.FC<Props> = ({
   description,
   date,
   newsSource,
+  href = "#",
 }) => {
   return (
     <Fragment>
@@ -42,7 +44,7 @@ const HorizontalNewsCard: React.FC<Props> = ({
             </div>
             <div className="grow shrink basis-0 justify-center items-start flex">
               <div className="grow shrink basis-0 flex-col justify-start items-start gap-2 flex">
-                <Link href="#" className="hover:underline">
+                <Link href={href} className="hover:underline">
                   <h3 className="self-stretch text-white text-lg font-bold leading-loose">
                     {title}
                   </h3>
