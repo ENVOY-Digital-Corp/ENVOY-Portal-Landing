@@ -22,7 +22,7 @@ yarn dev
 
 ## Blog Content delivery flow
 
-- Take a look at: [https://github.com/ENVOY-Digital-Corp/ENVOY-Portal-Landing/tree/master/blog/README.md](blog/README.md)
+- Take a look at: [blog/README.md](blog/README.md)
 
 # Original repo
 
