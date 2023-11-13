@@ -10,17 +10,28 @@
 
 - https://github.com/ENVOY-Digital-Corp/ENVOY-Portal-Landing/tree/master
 
-2. Click branch button and create new branch from master. Notice that branch name should be prefix with `article/` and followed by content name. For example, `article/my-new-blog`
-3. Click 'README.md' file and modify it a bit. (Developer will revert this change later, so don't worry) . And then `Commit changes`.
+2. Once there, click on the Fork button in the top-right corner. This creates a new copy of my demo repo under your GitHub user account with a URL like:
+
+   `https://github.com/<YourUserName>/ENVOY-Portal-Landing`
+
+   ![Forking](https://user-images.githubusercontent.com/16593431/282365876-a50b73a0-23a3-4592-90aa-e13b708a7e46.png)
+   ![Forking](https://user-images.githubusercontent.com/16593431/282366239-039aefd6-4be0-4816-9538-d58fcfce79a3.png)
+   ![Forking](https://user-images.githubusercontent.com/16593431/282366643-d362bc62-3a1c-4a3e-bc50-377abf03dca3.png)
+
+3. At your forked repository, click 'README.md' file and modify it a bit. (Developer will revert this change later, so don't worry) . And then `Commit changes`.
    ![Click Readme.md](https://user-images.githubusercontent.com/16593431/281625008-59a5625d-86fa-4fc3-9a43-05b2b99c5bbd.png)
    ![Click Edit](https://user-images.githubusercontent.com/16593431/281942246-e449d03b-f6dd-46fb-912b-69dd5c4f5acf.png)
    ![Click Commit changes](https://user-images.githubusercontent.com/16593431/281942319-5ec344d4-42e1-45b9-a7e3-dbef60c90f5b.png)
 
 4. Don't forget to tick `Create a new branch for this commit and start a pull request.`, naming new branch with `article/` prefix and click `Propose changes`
    ![Click Commit changes](https://user-images.githubusercontent.com/16593431/281942399-1a050b63-d802-452d-b88d-3c014188125f.png)
-5. You will be redirected to Pull Request page. Write your blog content in the description in markdown format. And then click `Create pull request`
-   ![Click Commit changes](https://user-images.githubusercontent.com/16593431/281943228-35785185-5173-4b54-aa93-90151b7c2bb9.png)
-6. That's it. Let developer know that you have created a Pull Request. Developer will do the rest.
+5. You will be redirected to Compage changes page. Click `compare across forks` and choose `master` branch in the base repository. Click `Create pull request`
+   ![Click Commit changes](https://user-images.githubusercontent.com/16593431/282367437-0c269340-9c8f-4cf5-af41-8ca2ee6aa96f.png)
+   ![Click Commit changes](https://user-images.githubusercontent.com/16593431/282367671-7b38ac03-72c7-42e1-91a3-dcd353004ac1.png)
+
+6. Write your blog content in the description in markdown format. Update the title. And then click `Create pull request`
+   ![Click Commit changes](https://user-images.githubusercontent.com/16593431/282368286-6acf043c-4c77-48dd-971a-4f23f8c2d819.png)
+7. That's it. Let developer know that you have created a Pull Request. Developer will do the rest.
 
 ## Developer
 
