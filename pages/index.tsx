@@ -313,16 +313,15 @@ const Landing = () => {
                 Exchange Partners
               </h3>
               <div className="LibraryPlaceholderImage px-10 sm:px-32 md:px-48 lg:px-64 py-8 lg:py-16 bg-zinc-900 rounded-2xl border border-white border-opacity-10 backdrop-blur-xl justify-center items-center flex">
-                {/* Temporarily Hide */}
                 <div className="w-full h-24">
-                  {/* <Image
+                  <Image
                     src="/partner-indo-dax.webp"
                     alt="partner-indo-dax"
                     width={0}
                     height={0}
                     sizes="100vw"
                     style={{ width: "100%", height: "auto" }}
-                  /> */}
+                  />
                 </div>
               </div>
             </div>
