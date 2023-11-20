@@ -11,7 +11,7 @@ import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward"
 import Image from "next/image"
 import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos"
 
-const Navigation = () => {
+const Header = () => {
   const [toggle, setToggle] = useState(false)
   const [follow, setFollow] = useState<null | HTMLElement>(null)
 
@@ -32,7 +32,7 @@ const Navigation = () => {
 
   return (
     <Fragment>
-      <nav className="h-[70px]">
+      <header className="h-[70px]">
         <div
           className={`navbar-backdrop fixed ${
             !toggle && "hidden"
@@ -154,7 +154,7 @@ const Navigation = () => {
                   </div>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="/blog">
                     <Button
                       variant="text"
                       className="text-white normal-case max-md:justify-start"
@@ -189,9 +189,9 @@ const Navigation = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </header>
     </Fragment>
   )
 }
 
-export default Navigation
+export default Header
