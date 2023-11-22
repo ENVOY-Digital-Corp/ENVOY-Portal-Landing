@@ -43,6 +43,6 @@
 
 2. Create new blog page in `pages/blog` folder. Put the content that content team has written in the PR into this file.
 
-3. Modify `blog/content.json` to match the new blog content.
+3. Modify `blog/content.ts` to match the new blog content.
 
 4. Update the PR and ask for review.
