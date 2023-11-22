@@ -435,11 +435,10 @@ const Landing = () => {
                     <NewsCard
                       key={index}
                       imageSrc={page.imageSrc}
-                      alt={page.alt}
+                      imageAlt={page.imageAlt}
                       title={page.title}
                       description={page.description}
                       date={format(parseISO(page.date), MONTH_YEAR_FORMAT)}
-                      newsSource={page.newsSource}
                       href={page.path}
                     />
                   ))}
@@ -452,14 +451,13 @@ const Landing = () => {
                         <div className="flex flex-col gap-4">
                           <NewsCard
                             imageSrc={page.imageSrc}
-                            alt={page.alt}
+                            imageAlt={page.imageAlt}
                             title={page.title}
                             description={page.description}
                             date={format(
                               parseISO(page.date),
                               MONTH_YEAR_FORMAT
                             )}
-                            newsSource={page.newsSource}
                             href={page.path}
                           />
                           <div className="h-4"></div>

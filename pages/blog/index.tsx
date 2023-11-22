@@ -2,18 +2,16 @@ import NewsCard from "@/components/common/cards/NewsCard"
 import SectionSlider from "@/components/common/wrappers/SectionSlider"
 import { SwiperSlide } from "swiper/react"
 import BlogHighlightSection from "@/components/blog-page/BlogHighlightSection"
-import JsonContent from "@/blog/content.json"
-import { BlogContentType } from "@/blog/type"
+import BlogContent from "@/blog/content"
 import { format, parseISO } from "date-fns"
 import { MONTH_YEAR_FORMAT } from "@/utils/constants"
 
-const BlogContent = JsonContent as unknown as BlogContentType
 // Sort the pages by date DESC
 export const newBlogPages = Object.values(BlogContent.pages)
-  .slice(0, 3)
   .sort((a, b) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime()
   })
+  .slice(0, 3)
 
 const Blog = () => {
   return (
@@ -35,11 +33,10 @@ const Blog = () => {
               <NewsCard
                 key={index}
                 imageSrc={page.imageSrc}
-                alt={page.alt}
+                imageAlt={page.imageAlt}
                 title={page.title}
                 description={page.description}
                 date={format(parseISO(page.date), MONTH_YEAR_FORMAT)}
-                newsSource={page.newsSource}
                 href={page.path}
               />
             ))}
@@ -54,11 +51,10 @@ const Blog = () => {
               <div className="flex flex-col gap-4">
                 <NewsCard
                   imageSrc={page.imageSrc}
-                  alt={page.alt}
+                  imageAlt={page.imageAlt}
                   title={page.title}
                   description={page.description}
                   date={format(parseISO(page.date), MONTH_YEAR_FORMAT)}
-                  newsSource={page.newsSource}
                   href={page.path}
                 />
                 <div className="h-4"></div>

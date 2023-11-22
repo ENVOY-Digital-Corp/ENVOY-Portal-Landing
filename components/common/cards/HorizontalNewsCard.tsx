@@ -4,16 +4,16 @@ import { Fragment } from "react"
 
 type Props = {
   imageSrc?: string
-  alt?: string
+  imageAlt?: string
   title: string
   description: string
   date: string
-  newsSource: string
+  newsSource?: string
   href?: string
 }
 const HorizontalNewsCard: React.FC<Props> = ({
   imageSrc = "/circle-graphic.webp",
-  alt = "circle-graphic",
+  imageAlt = "circle-graphic",
   title,
   description,
   date,
@@ -29,7 +29,7 @@ const HorizontalNewsCard: React.FC<Props> = ({
               <div className="w-32 h-32 bg-black bg-opacity-5 rounded-lg justify-center items-center flex">
                 <Image
                   src={imageSrc}
-                  alt={alt}
+                  alt={imageAlt}
                   width={0}
                   height={0}
                   sizes="100vw"
@@ -76,7 +76,7 @@ const HorizontalNewsCard: React.FC<Props> = ({
             <div className="w-24 h-24 bg-black bg-opacity-5 rounded-lg justify-center items-center flex">
               <Image
                 src={imageSrc}
-                alt={alt}
+                alt={imageAlt}
                 width={0}
                 height={0}
                 sizes="100vw"

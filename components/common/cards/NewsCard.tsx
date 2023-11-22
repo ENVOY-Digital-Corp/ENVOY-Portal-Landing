@@ -1,18 +1,21 @@
 import Image from "next/image"
 import Link from "next/link"
 
+const TITLE_MAX_LENGTH = 100
+const DESCRIPTION_MAX_LENGTH = 300
+
 type Props = {
   imageSrc: string
-  alt: string
+  imageAlt: string
   title: string
   href?: string
   description: string
   date: string
-  newsSource: string
+  newsSource?: string
 }
 const NewsCard: React.FC<Props> = ({
   imageSrc,
-  alt,
+  imageAlt,
   title,
   href = "#",
   description,
@@ -26,7 +29,7 @@ const NewsCard: React.FC<Props> = ({
           <Image
             className="rounded-lg"
             src={imageSrc}
-            alt={alt}
+            alt={imageAlt}
             width={0}
             height={0}
             sizes="100vw"
@@ -43,12 +46,16 @@ const NewsCard: React.FC<Props> = ({
           <div className="grow shrink basis-0 flex-col justify-start items-start gap-2 flex">
             <Link href={href} className="hover:underline">
               <div className="text-white text-base font-bold leading-normal tracking-tight">
-                {title}
+                {title.length > TITLE_MAX_LENGTH
+                  ? `${title.slice(0, TITLE_MAX_LENGTH)}...`
+                  : title}
               </div>
             </Link>
 
             <div className="opacity-40 text-white text-sm font-normal leading-tight tracking-tight">
-              {description}
+              {description.length > DESCRIPTION_MAX_LENGTH
+                ? `${description.slice(0, DESCRIPTION_MAX_LENGTH)}...`
+                : description}
             </div>
           </div>
         </div>

@@ -2,11 +2,9 @@
 import { format, parseISO } from "date-fns"
 import HorizontalNewsCard from "../common/cards/HorizontalNewsCard"
 import NewsHighlightCard from "../common/cards/NewsHighlightCard"
-import JsonContent from "@/blog/content.json"
-import { BlogContentType } from "@/blog/type"
+import BlogContent from "@/blog/content"
 import { MONTH_YEAR_FORMAT } from "@/utils/constants"
 
-const BlogContent = JsonContent as unknown as BlogContentType
 // Sort the pages by date DESC
 const pageArray = Object.values(BlogContent.pages)
   .slice(0, 10)
@@ -26,12 +24,11 @@ const BlogHighlightSection: React.FC<Props> = ({}) => {
           {pageArray.map((page, index) => (
             <HorizontalNewsCard
               imageSrc={page.imageSrc}
-              alt={page.alt}
+              imageAlt={page.imageAlt}
               key={index}
               title={page.title}
               description={page.description}
               date={format(parseISO(page.date), MONTH_YEAR_FORMAT)}
-              newsSource={page.newsSource}
               href={page.path}
             />
           ))}
@@ -54,6 +51,7 @@ const BlogHighlightSection: React.FC<Props> = ({}) => {
               no={`0${index + 1}`}
               title={page.title}
               description={page.description}
+              href={page.path}
             />
           ))}
         </div>

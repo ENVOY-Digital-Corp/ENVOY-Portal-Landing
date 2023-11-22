@@ -1,0 +1,50 @@
+import BlogHeader from "@/components/blog-page/BlogHeader"
+import BlogHighlightSection from "@/components/blog-page/BlogHighlightSection"
+import { format, parseISO } from "date-fns"
+import { MONTH_YEAR_FORMAT } from "@/utils/constants"
+import BlogContent from "@/blog/content"
+
+export const meta = {
+  ...BlogContent.pages["indodax-x-envoy-portal"],
+}
+
+<img
+  src={meta.imageSrc}
+  alt={meta.imageAlt}
+  style={{ width: "50%", marginLeft: "auto", marginRight: "auto" }}
+/>
+
+We are thrilled to tell you about our collaboration with Indodax, one of Indonesia's leading exchange platforms. With the greatest rates, seamless transactions, unrivaled safety, and complete control over digital assets, this innovative partnership will completely transform the cryptocurrency experience.
+
+**The Power of Synergy**<br/>
+The alliance between Indodax and EnvoyPortal.com signifies a shared vision of enhancing user-centric cryptocurrency solutions. Leveraging their respective strengths, these two platforms are poised to introduce innovative features that will revolutionize the way individuals interact with cryptocurrencies.
+
+**Indodax: Your Trusted Exchange Partner**<br/>
+Indodax has earned a distinguished reputation in the cryptocurrency ecosystem, especially in Indonesia. known for its user-friendly interface, an extensive array of supported cryptocurrencies, and a steadfast commitment to security. It has become the go-to platform for traders of all levels.
+
+**EnvoyPortal.com: The Gateway to Control**<br/>
+EnvoyPortal.com offers a unique value proposition as a Non-Custodial Crypto Gateway. This approach prioritizes user control and security. With non-custodial wallets, users retain ownership and manage their assets directly, minimizing the risks associated with centralized exchanges.
+
+**The Benefits you can enjoy!**<br/>
+The Simplicity: Take advantage of this collaboration's easy swapping feature, which not only makes transactions in the cryptocurrency world simpler, but also offers you total token choice and safety.
+
+**Seamless Transactions:** Expect a seamless and efficient trading experience, making buying, selling, and managing cryptocurrencies a breeze.
+
+**Best Rates Guaranteed:** Enjoy access to the best available rates for your cryptocurrency transactions, thanks to the combined expertise of Indodax and EnvoyPortal.com.
+
+**Ultimate User Control:** Your crypto journey is in your hands. With non-custodial wallets, you have complete control over your assets, ensuring no intermediary can interfere.
+
+This partnership is an incredible chance that shouldn't be missed. It combines the benefits of the best rates, the simplicity and control of non-custodial wallets, the certainty that your cryptocurrency journey is fully yours to navigate, and the safety of seamless transactions.<br/>
+With this partnership, Envoy intends to go on an exciting road of innovation and revolution in the world of Web3 with the partnership we think can best support our efforts to improve; keep tuned for future partnerships and updates. We have the chance to work together to improve the Web3 environment and pave the way for a more promising future for this sector.
+
+export default ({ children }) => (
+  <div className="container mt-8">
+    <BlogHeader
+      title={meta.title}
+      date={format(parseISO(meta.date), MONTH_YEAR_FORMAT)}
+      categories={meta.categories}
+    />
+    <article className="mt-8 space-y-4">{children}</article>
+    <BlogHighlightSection />
+  </div>
+)
