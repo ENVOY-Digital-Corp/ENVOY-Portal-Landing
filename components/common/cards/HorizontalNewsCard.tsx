@@ -91,7 +91,7 @@ const HorizontalNewsCard: React.FC<Props> = ({
           </div>
           <div className="grow shrink basis-0 flex-col justify-start items-center gap-4 flex">
             <div className="self-stretch h-16 flex-col justify-start items-start gap-2 flex">
-              <Link href="#" className="hover:underline">
+              <Link href={href} className="hover:underline">
                 <h3 className="self-stretch text-white text-lg font-bold">
                   {title.length > 40 ? `${title.slice(0, 40)}...` : title}
                 </h3>
