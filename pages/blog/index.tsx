@@ -1,15 +1,17 @@
-/* eslint-disable quotes */
-import { Element, Link as ScrollLink } from "react-scroll"
-import Image from "next/image"
-import Link from "next/link"
-import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos"
-import PartnerCard from "@/components/common/cards/PartnerCard"
 import NewsCard from "@/components/common/cards/NewsCard"
-import HorizontalNewsCard from "@/components/common/cards/HorizontalNewsCard"
-import NewsHighlightCard from "@/components/common/cards/NewsHighlightCard"
 import SectionSlider from "@/components/common/wrappers/SectionSlider"
 import { SwiperSlide } from "swiper/react"
 import BlogHighlightSection from "@/components/blog-page/BlogHighlightSection"
+import BlogContent from "@/blog/content"
+import { format, parseISO } from "date-fns"
+import { MONTH_YEAR_FORMAT } from "@/utils/constants"
+
+// Sort the pages by date DESC
+export const newBlogPages = Object.values(BlogContent.pages)
+  .sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime()
+  })
+  .slice(0, 3)
 
 const Blog = () => {
   return (
@@ -27,79 +29,38 @@ const Blog = () => {
       <div className="hidden justify-center items-center md:flex pt-8 mt-4">
         <div className="Wrapper self-stretch flex-col justify-start items-start gap-8 md:gap-16 flex">
           <div className="Cardgroup grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <NewsCard
-              imageSrc="/news-x-sgg.webp"
-              alt="news-x-sgg"
-              title={`"Sakura Guild Games - SUP" signed partnership with ENVOY Portal`}
-              description={`SGG enter the integrated ecosystem of ENVOY by providing GMS and ENVOY Portal access to thousands of scholars.`}
-              date="August 2023"
-              newsSource="prtimes.jp"
-            />
-
-            <NewsCard
-              imageSrc="/news-x-playmining.webp"
-              alt="news-x-playmining"
-              title={`ENVOY Portal is supporting PlayMining Games to use GMS and Accept Feature to Disburse scholars earnings`}
-              description={`JobTribes and Cooking Burger is natively supported on ENVOY's GMS and Accept Feature.`}
-              date="September 2023"
-              newsSource="prtimes.jp"
-            />
-
-            <NewsCard
-              imageSrc="/news-playsia-tv.webp"
-              alt="news-playsia-tv"
-              title={`ENVOY Portal signed exclusive partnership with PlaysiaTV`}
-              description={`PlaysiaTV (a project from ACAFP) is exclusively partnering with ENVOY Portal to provide best crypto UX to its users`}
-              date="October 2023"
-              newsSource="prtimes.jp"
-            />
+            {newBlogPages.map((page, index) => (
+              <NewsCard
+                key={index}
+                imageSrc={page.imageSrc}
+                imageAlt={page.imageAlt}
+                title={page.title}
+                description={page.description}
+                date={format(parseISO(page.date), MONTH_YEAR_FORMAT)}
+                href={page.path}
+              />
+            ))}
           </div>
         </div>
       </div>
 
       <div className="justify-center w-full items-center flex pt-8 mt-4 md:hidden">
         <SectionSlider>
-          <SwiperSlide>
-            <div className="flex flex-col gap-4">
-              <NewsCard
-                imageSrc="/news-x-sgg.webp"
-                alt="news-x-sgg"
-                title={`"Sakura Guild Games - SUP" signed partnership with ENVOY Portal`}
-                description={`SGG enter the integrated ecosystem of ENVOY by providing GMS and ENVOY Portal access to thousands of scholars.`}
-                date="August 2023"
-                newsSource="prtimes.jp"
-              />
-              <div className="h-4"></div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="flex flex-col gap-4">
-              <NewsCard
-                imageSrc="/news-x-playmining.webp"
-                alt="news-x-playmining"
-                title={`ENVOY Portal is supporting PlayMining Games to use GMS and Accept Feature to Disburse scholars earnings`}
-                description={`JobTribes and Cooking Burger is natively supported on ENVOY's GMS and Accept Feature.`}
-                date="September 2023"
-                newsSource="prtimes.jp"
-              />
-              <div className="h-4"></div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="flex flex-col gap-4">
-              <NewsCard
-                imageSrc="/news-playsia-tv.webp"
-                alt="news-playsia-tv"
-                title={`ENVOY Portal signed exclusive partnership with PlaysiaTV`}
-                description={`PlaysiaTV (a project from ACAFP) is exclusively partnering with ENVOY Portal to provide best crypto UX to its users`}
-                date="October 2023"
-                newsSource="prtimes.jp"
-              />
-              <div className="h-4"></div>
-            </div>
-          </SwiperSlide>
+          {newBlogPages.map((page, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col gap-4">
+                <NewsCard
+                  imageSrc={page.imageSrc}
+                  imageAlt={page.imageAlt}
+                  title={page.title}
+                  description={page.description}
+                  date={format(parseISO(page.date), MONTH_YEAR_FORMAT)}
+                  href={page.path}
+                />
+                <div className="h-4"></div>
+              </div>
+            </SwiperSlide>
+          ))}
         </SectionSlider>
       </div>
 

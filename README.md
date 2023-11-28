@@ -1,3 +1,31 @@
+## Prerequisites
+
+- yarn 1.x
+- node ^16.x
+- npm ^7.x
+
+## Installation steps
+
+- Install packages
+
+```bash
+yarn install
+```
+
+- Run development server
+
+```bash
+yarn dev
+```
+
+- Visit http://localhost:3000
+
+## Blog Content delivery flow
+
+- Take a look at: [blog/README.md](blog/README.md)
+
+# Original repo
+
 <img alt="" src="https://res.cloudinary.com/muhrusdi/image/upload/v1665482878/new-senjs-cover.jpg">
 
 ## Features

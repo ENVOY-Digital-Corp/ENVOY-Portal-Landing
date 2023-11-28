@@ -1,6 +1,19 @@
 /* eslint-disable quotes */
+import { format, parseISO } from "date-fns"
 import HorizontalNewsCard from "../common/cards/HorizontalNewsCard"
 import NewsHighlightCard from "../common/cards/NewsHighlightCard"
+import BlogContent from "@/blog/content"
+import { MONTH_YEAR_FORMAT } from "@/utils/constants"
+
+// Sort the pages by date DESC
+const pageArray = Object.values(BlogContent.pages)
+  .slice(0, 10)
+  .sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime()
+  })
+const highlightPages = BlogContent.highlights
+  .map(highlight => BlogContent.pages[highlight])
+  .slice(0, 3)
 
 type Props = {}
 const BlogHighlightSection: React.FC<Props> = ({}) => {
@@ -8,54 +21,17 @@ const BlogHighlightSection: React.FC<Props> = ({}) => {
     <section className="flex flex-col-reverse justify-end md:grid md:grid-cols-3 gap-8 pt-8 mt-12">
       <div className="md:col-span-2 justify-start items-start gap-8 flex">
         <div className="CardGroup grow shrink basis-0 flex-col justify-start items-start gap-8 flex">
-          <HorizontalNewsCard
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-            date="August 2023"
-            newsSource="prtimes.jp"
-          />
-          <HorizontalNewsCard
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-            date="August 2023"
-            newsSource="prtimes.jp"
-          />
-          <HorizontalNewsCard
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-            date="August 2023"
-            newsSource="prtimes.jp"
-          />
-          <HorizontalNewsCard
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-            date="August 2023"
-            newsSource="prtimes.jp"
-          />
-          <HorizontalNewsCard
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-            date="August 2023"
-            newsSource="prtimes.jp"
-          />
-          <HorizontalNewsCard
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-            date="August 2023"
-            newsSource="prtimes.jp"
-          />
-          <HorizontalNewsCard
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-            date="August 2023"
-            newsSource="prtimes.jp"
-          />
-          <HorizontalNewsCard
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-            date="August 2023"
-            newsSource="prtimes.jp"
-          />
+          {pageArray.map((page, index) => (
+            <HorizontalNewsCard
+              imageSrc={page.imageSrc}
+              imageAlt={page.imageAlt}
+              key={index}
+              title={page.title}
+              description={page.description}
+              date={format(parseISO(page.date), MONTH_YEAR_FORMAT)}
+              href={page.path}
+            />
+          ))}
         </div>
         <div className="hidden DividerVertical h-96 opacity-20 border border-white flex-col justify-start items-start md:flex">
           <div className="MinWidth w-px h-px relative" />
@@ -69,21 +45,15 @@ const BlogHighlightSection: React.FC<Props> = ({}) => {
           </h2>
         </div>
         <div className="CardGroup flex-col justify-start items-start gap-6 flex">
-          <NewsHighlightCard
-            no="01"
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-          />
-          <NewsHighlightCard
-            no="02"
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-          />
-          <NewsHighlightCard
-            no="03"
-            title="Eternal Crypt - Wizardry BC signs partnership with Southeast Asia game guild, Garuda Guild Games"
-            description={`GGG " Envoy Portal", the pioneer of the Web3 payment solution.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum ac aliquet odio mattis.`}
-          />
+          {highlightPages.map((page, index) => (
+            <NewsHighlightCard
+              key={index}
+              no={`0${index + 1}`}
+              title={page.title}
+              description={page.description}
+              href={page.path}
+            />
+          ))}
         </div>
       </div>
     </section>

@@ -6,8 +6,14 @@ type Props = {
   no: string
   title: string
   description: string
+  href: string
 }
-const NewsHighlightCard: React.FC<Props> = ({ no, title, description }) => {
+const NewsHighlightCard: React.FC<Props> = ({
+  no,
+  title,
+  description,
+  href,
+}) => {
   return (
     <div className="justify-start items-start gap-6 flex">
       <div className="justify-start items-start gap-6 flex">
@@ -26,7 +32,7 @@ const NewsHighlightCard: React.FC<Props> = ({ no, title, description }) => {
           <div className="px-1 py-1 rounded flex-col justify-center items-center flex">
             <div className="justify-center items-center gap-2 flex">
               <Link
-                href="#"
+                href={href}
                 className="text-white text-xs font-medium leading-snug tracking-wide hover:underline"
               >
                 Read Article

@@ -1,27 +1,21 @@
 import BlogHeader from "@/components/blog-page/BlogHeader"
 import BlogHighlightSection from "@/components/blog-page/BlogHighlightSection"
+import { format, parseISO } from "date-fns"
+import { MONTH_YEAR_FORMAT } from "@/utils/constants"
+import BlogContent from "@/blog/content"
 
 export const meta = {
-  title: `Eternal Crypt - Wizardry BC - signs partnership with Southeast Asia game guild 
-" Garuda Guild Games "`,
+  ...BlogContent.pages["eternal-crypt"],
 }
 
-<img
-  src="/blog-eternal-crypt.png"
-  alt="Eternal Crypt - Wizardry BC - signs partnership with Southeast Asia game guild game"
-/>
+<img src={meta.imageSrc} alt={meta.imageAlt} />
 
-<br />
 Eternal Crypt - Wizardry BC -'' is a blockchain game being developed jointly with
 Thuringham Co., Ltd. (Headquarters: Minato-ku, Tokyo, Representative Director: Hiroki
 Tahara, hereinafter referred to as `Thuringham'') using the `Wizardry'' IP. has entered
 into a partnership with the Southeast Asian gaming guild "Garuda Guild Games."
 
-<br />
-
 Southeast Asia, centered on Indonesia, is a hotspot where there are many blockchain gamers. With marketing support from Garuda Guild Games, which includes many scholars, we will further expand the community by actively promoting the game and tokenomics of Eternal Crypt - Wizardry BC - to users who are highly interested in blockchain games. We will continue to promote this.
-
-<br />
 
 What is Garuda Guild Games?
 Garuda Guild Games (GGG) is a gaming guild that accommodates a diverse range of gamers from around the world. Although it is a new guild established at the end of 2021, it has become one of the fastest growing and popular gaming guilds in Indonesia. Specializing in Web3/blockchain/NFT gaming, GGG helps connect talented gamers with asset owners and sponsors in scholarship programs.
@@ -30,12 +24,11 @@ GGG has grown by leaps and bounds by focusing on Web3/NFT games, the fastest gro
 export default ({ children }) => (
   <div className="container mt-8">
     <BlogHeader
-      title={`Eternal Crypt - Wizardry BC - signs partnership with Southeast Asia game guild 
-" Garuda Guild Games "`}
-      date={"Oct 21, 2023"}
-      categories={["Partnerships", "Games"]}
+      title={meta.title}
+      date={format(parseISO(meta.date), MONTH_YEAR_FORMAT)}
+      categories={meta.categories}
     />
-    <article className="mt-8">{children}</article>
+    <article className="mt-8 space-y-4">{children}</article>
     <BlogHighlightSection />
   </div>
 )
